@@ -1,23 +1,8 @@
 require 'test_helper'
 
 class WelcomeControllerTest < ActionController::TestCase
-  test "should get index" do
-    get :index
-    assert_response :success
-  end
-
-  test "should get view" do
-    get :view
-    assert_response :success
-  end
-
-  test "should get about" do
-    get :about
-    assert_response :success
-  end
-
-  test "should get contact" do
-    get :contact
+  test "should get plan" do
+    get :plan
     assert_response :success
   end
 

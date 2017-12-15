@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   root 'welcome#view'
   get 'welcome/index'
 
@@ -7,6 +8,7 @@ Rails.application.routes.draw do
   get 'welcome/about'
 
   get 'welcome/contact'
+  get 'welcome/plan'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
