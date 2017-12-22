@@ -1,15 +1,15 @@
 Rails.application.routes.draw do
 
-  root 'welcome#view'
-  get 'welcome/index'
-  get 'welcome/view'
-
+  root 'welcome#index'
   get 'welcome/about'
-
   get 'welcome/contact'
   get 'welcome/gallery'
+  get 'welcome/index'
+  get 'welcome/plan'
   get 'welcome/services'
   get 'welcome/tips'
+  get 'welcome/view'
+  get 'welcome/index'
 
   resources :welcome
 
