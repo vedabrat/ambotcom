@@ -7,7 +7,10 @@ Rails.application.routes.draw do
   get 'welcome/about'
 
   get 'welcome/contact'
-  get 'welcome/plan'
+  get 'welcome/gallery'
+  get 'welcome/services'
+  get 'welcome/tips'
+
   resources :welcome
 
   # The priority is based upon order of creation: first created -> highest priority.
