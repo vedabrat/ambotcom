@@ -30,19 +30,19 @@
      		 		<div class="top-nav" id='cssmenu'>
 						<ul class="orange nav1">
 							<li class="showhide" style="display: none;"><span class="title">MENU</span><span class="icon"><em></em><em></em><em></em><em></em></span></li>
-							<li style=""><a class="active" href="index.html">Home</a></li>
+							<li style=""><a class="active" href="#">Home</a></li>
 							<li class='has-sub' style=""><a href="#">About us</a>
 								<ul>
-									<li class='has-sub'><a href='about.html'>About 1</a></li>
-									<li class='has-sub'><a href='about.html'>About 2</a></li>
-									<li class='has-sub'><a href='about.html'>About 3</a></li>
-									<li class='has-sub'><a href='about.html'>About 4</a></li>
+									<li class='has-sub'><%= link_to "About 1", welcome_about_path %></li>
+									<li class='has-sub'><%= link_to "About 2", welcome_about_path %></li>
+									<li class='has-sub'><%= link_to "About 3", welcome_about_path %></li>
+									<li class='has-sub'><%= link_to "About 4", welcome_about_path %></li>
 								</ul>
 							</li>
-							<li style=""><a href="tips.html">Factory tips</a></li>
-							<li style=""><a href="services.html">Services</a></li>
-							<li style=""><a href="gallery.html">Gallery</a></li>
-							<li style=""><a href="contact.html">Contact</a></li>
+							<li style=""><%= link_to "Factory tips", welcome_tips_path %></li>
+							<li style=""><%= link_to "Services", welcome_services_path %></li>
+							<li style=""><%= link_to "Gallery", welcome_gallery_path %></li>
+							<li style=""><%= link_to "Contact", welcome_contact_path %></li>
 						</ul>
 					</div>
      		 		<div class="clear"> </div>
@@ -178,34 +178,3 @@
 					<p>&copy; 2013 The Factory. All Rights Reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
 			</div>
 		</div>
-		<script type="text/javascript">
-						$(document).ready(function() {
-							/*
-							var defaults = {
-					  			containerID: 'toTop', // fading element id
-								containerHoverID: 'toTopHover', // fading element hover id
-								scrollSpeed: 1200,
-								easingType: 'linear'
-					 		};
-							*/
-
-							$().UItoTop({ easingType: 'easeOutQuart' });
-
-						});
-					</script>
-				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-		<link href="css/flexslider.css" rel='stylesheet' type='text/css' />
-							  <script defer src="js/jquery.flexslider.js"></script>
-							  <script type="text/javascript">
-								$(function(){
-								  SyntaxHighlighter.all();
-								});
-								$(window).load(function(){
-								  $('.flexslider').flexslider({
-									animation: "slide",
-									start: function(slider){
-									  $('body').removeClass('loading');
-									}
-								  });
-								});
-							  </script>
