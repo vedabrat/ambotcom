@@ -32,12 +32,14 @@
 							<li class="showhide" style="display: none;"><span class="title">MENU</span><span class="icon"><em></em><em></em><em></em><em></em></span></li>
 							<li style=""><a class="active" href="#">Home</a></li>
 							<li class='has-sub' style=""><a href="#">About us</a>
-								<ul>
+<!--  dropdown menu for about us-->
+                <!-- <ul>
 									<li class='has-sub'><%= link_to "About 1", welcome_about_path %></li>
 									<li class='has-sub'><%= link_to "About 2", welcome_about_path %></li>
 									<li class='has-sub'><%= link_to "About 3", welcome_about_path %></li>
 									<li class='has-sub'><%= link_to "About 4", welcome_about_path %></li>
-								</ul>
+								</ul> -->
+<!-- dropdown menu for about us end  -->
 							</li>
 							<li style=""><%= link_to "Factory tips", welcome_tips_path %></li>
 							<li style=""><%= link_to "Services", welcome_services_path %></li>
@@ -76,34 +78,34 @@
 						<div class="mid-grids">
 							<div class="mid-grid">
 								<h3>About us</h3>
-								<span>Curabitur condimentum erat non ultricies covlis augue turpis varius orci sed.Sed ultrices posere mauris nec volutpat.</span>
-								<p>Proin lobortis erat sed metus interdum vel is all si aliquetsil purus cursus. Sed lacus erat bibnioum in rutrumriCurabitur condimentum erat non i sed.Sed ultrices posere mauris nec volutpat. ve asl luctus id libero.Suspendis alelri interdum poatill aliquet. Nunc molestie felis quis turis fringilla alryjhl tincunt. Nulla facilisi. Sed ac imperdiet sem.</p>
-								<p>Curabitur condimentum erat non ultricies covlis augue turpis varius orci sed.Sed ultrices posere mauris nec volutpat.</p>
+								<span>Specializing in creation of mechincal machines to automate processes , Ambot Automation dedicates itself to providing dependable services.</span>
+								<p>The creation of machines that do millions of operations per second is no feat, and we have it down to a rote and a science.</p>
+								<p>For the past 15 years, we've been dedicating our service to the Toronto Ontario area.</p>
 								<a class="button" href="#">Read more</a>
 							</div>
 							<div class="mid-grid">
 								<h3>Services</h3>
-								<p>Curabitur condimentum erat non ultricies covlis augue turpis varius orci sed.Sed ultrices posere mauris nec volutpat.</p>
+								<p>Services include design, drafting, and contracted completetion management.</p>
 								<ul>
-									<li><a href="#">Phasellus in urna</a></li>
-									<li><a href="#">Vestibulum vitae lorem</a></li>
-									<li><a href="#">augue turpis varius orci</a></li>
-									<li><a href="#">sed.Sed ultrices posere</a></li>
-									<li><a href="#">Phasellus in urna</a></li>
-									<li><a href="#">Vestibulum vitae lorem</a></li>
+									<li><a href="#">Drafting Packages</a></li>
+									<li><a href="#">Design Packages</a></li>
+									<li><a href="#">Materials Packages</a></li>
+									<li><a href="#">Completion Retainer Agreement</a></li>
+									<!-- <li><a href="#">Phasellus in urna</a></li> -->
+									<!-- <li><a href="#">Vestibulum vitae lorem</a></li> -->
 								</ul>
 								<a class="button" href="#">Read more</a>
 							</div>
 							<div class="mid-grid" id="last-grid1">
 								<h3>Latest-News</h3>
-								<p>Curabitur condimentum erat non ultricies covlis augue turpis varius orci sed.Sed ultrices posere mauris nec volutpat.</p>
+								<p>As of December 10, 2017, Ambot Automation is working on teambuilding, request management, and frontend/backend actions to serve you better!</p>
 								<div class="latest-news-grid">
 									<div class="latest-news-pic">
 										<img src="images/n1.jpg" title="imag-name" />
 									</div>
 									<div class="latest-news-info">
-										<a href="#">jan 21.01.2013</a>
-										<p>Interdum vel is all si aliquetsil purus cursus. Sed lacus erat bibnioum in rutrumri ve asl luctus id libero</p>
+										<a href="#">Dec 10, 2017</a>
+										<p>Ambot Automation sells rc cars! A webstore is soon to come!</p>
 									</div>
 									<div class="clear"> </div>
 								</div>
@@ -112,8 +114,8 @@
 										<img src="images/n2.jpg" title="imag-name" />
 									</div>
 									<div class="latest-news-info">
-										<a href="#">jan 21.01.2013</a>
-										<p>Interdum vel is all si aliquetsil purus cursus. Sed lacus erat bibnioum in rutrumri ve asl luctus id libero</p>
+										<a href="#">Dec 8, 2017</a>
+										<p>Ambot Automation strikes up igniting conversation with matches on matchbox.top!</p>
 									</div>
 									<div class="clear"> </div>
 								</div>
@@ -126,24 +128,24 @@
 								<h3>Watch the Video</h3>
 								<div class="video-grid">
 									<img src="images/v1.jpg" title="video-name" />
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at accumsan justo. Vivamus eget volpat lacus nec tristique leoestibulum.</p>
+									<p>Our Youtube site is currently under development.</p>
 								</div>
 								<div class="video-grid">
 									<img src="images/v2.jpg" title="video-name" />
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at accumsan justo. Vivamus eget volpat lacus nec tristique leoestibulum.</p>
+									<p>User submissions can be sent to the <%= link_to "developer!", "http://techit.herokuapp.com/#contact" %></p>
 								</div>
 								<div class="clear"> </div>
 							</div>
 							<div class="tips">
-								<h3>Cooking Tips</h3>
+								<h3>Navigation Tips</h3>
 								<div class="menu_container">
 									<p class="menu_head">Factory Tip1<span class="plusminus">+</span></p>
 										<div class="menu_body" style="display: none;">
-										<p>containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+										<p>Issue any suggestions <%= link_to "here!", welcome_contact_path %></p>
 										</div>
 									<p class="menu_head">Factory Tip2<span class="plusminus">+</span></p>
 										<div class="menu_body" style="display: none;">
-										<p>theonlytutorials.com is providing a great varitey of tutorials and scripts to use it immediate on any project!</p>
+										<p>  <%= link_to "Developer site", "http://techit.herokuapp.com/#contact" %> unlocked!</p>
 										</div>
 								</div>
 							</div>
@@ -175,6 +177,6 @@
 						<a href="#top" class="scroll"> </a>
 						<div class="clear"> </div>
 					</div>
-					<p>&copy; 2013 The Factory. All Rights Reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+          <h6> <%= link_to "Techit ", "http://techit.herokuapp.com/#contact" %> & <%= link_to "W3layouts", "http://w3layouts.com/"%> All Rights Reserved</a></h6>
 			</div>
 		</div>
