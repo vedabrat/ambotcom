@@ -1,0 +1,160 @@
+<h1>New Quote</h1>
+<p>
+<form>
+  <div>
+    <span><label>Upload Schematics</label></span>
+    <span><button name="schematics">Choose files to upload </button></span>
+  </div>
+  <div>
+    <span><label>Select Panel Size</label></span>
+    <span>
+      <select name="sizes">
+        <option value="1x1">1x1</option>
+        <option value="2x2">2x2</option>
+        <option value="3x3">3x3</option>
+        <option value="4x4">4x4</option>
+        <option value="5x5">5x5</option>
+        <option value="6x6">6x6</option>
+        <option value="7x7">7x7</option>
+        <option value="8x8">8x8</option>
+        <option value="9x9">9x9</option>
+        <option value="10x10">10x10</option>
+      </select>
+    </span>
+  </div>
+  <div>
+    <span><label>Parts Selection</label></span>
+    <span>
+      <br>Fusing or CB
+      <select name='fusing or CB '>
+        <option value="1pole">1 pole</option>
+        <option value="2pole">2 pole</option>
+        <option value="3pole">3 pole</option>
+      </select>
+      <br>Contactors
+      <select name='contactors'>
+        <option value="0-50A">0-50A</option>
+        <option value="60-150A">60-150A</option>
+        <option value="200A+">200A +</option>
+      </select>
+      <br>Relays
+      <select name='relays'>
+        <option value="2polerelay">2 pole relay</option>
+        <option value="forceguided">forceguided</option>
+        <option value="safetyrelays">safety relays</option>
+      </select>
+      <br>Transformer
+      <select name='transformer '>
+        <option value="50-1000VA">50-1000 VA</option>
+        <option value="1500-3KVA">1500-3KVA</option>
+      </select>
+      <br>
+      <select name='power supply'>
+      </select>
+      <br>PLC
+      <select name='plc'>
+        <option value="mainunitandpowersupply">main unit and power supply</option>
+        <option value="digInOut16pt">digital - input / output  (16pt)   (omron)</option>
+        <option value="analInOut4pt">analog - inout / output  (4pt)</option>
+      </select>
+      <br>VFDS
+      <select name='vfds'>
+        <option value="analInOut4pt2">analog - inout / output  (4pt)</option>
+      </select>
+      <br>Special Device or Custom Modification
+      <select name='special device or custom modification'>
+        <option value="LAYOUTOFENCLOSUREANDDOOR">LAYOUT OF ENCLOSURE AND DOOR</option>
+      </select>
+      <br>Pilot Device
+      <select name='pilotDevice(pushbuttonsswlight)'>
+        <option value="1-10 devices">1-10 devices</option>
+        <option value="each additional device">each additional device</option>
+        <option value="hmi">hmi</option>
+        <option value="cable glands">cable glands</option>
+        <option value="external connection quick connect">external connection quick connect</option>
+        <option value="PUNCH MOUNT AND WIRE EXTERNAL COMPONENTS">PUNCH MOUNT AND WIRE EXTERNAL COMPONENTS</option>
+        <option value="pilot device  (pushbutton, ssw, light)">pilot device  (pushbutton, ssw, light)</option>
+        <option value="per device">per device</option>
+        <option value="hmi">hmi</option>
+        <option value="cable glands">cable glands</option>
+        <option value="external connection quick connect">external connection quick connect</option>
+        <option value="1-10 poles">1-10 poles</option>
+        <option value="12-16 poles">12-16 poles</option>
+        <option value="cooling fanintake filter">cooling fan /intake filter</option>
+      </select>
+
+      <input name="parts" type="text" class="textbox"></span>
+  </div>
+  <div>
+    <span><label>Requested Completion Date</label></span>
+    <span>
+      <select name="RTTC">
+        <option value="4to6">4-6 weeks</option>
+        <option value="3to4">3-4 weeks</option>
+        <option value="2to3">2-3 weeks</option>
+        <option value="1to2">1-2 weeks</option>
+        <option value="1week">within 1 week</option>
+      </select>
+    </span>
+  </div>
+  <div>
+    <span><label>Upload Pictures of Onhand Parts</label></span>
+    <span><button name="onhandparts">Choose files to upload </button></span>
+  </div>
+
+ <div>
+    <span><input type="submit" value="Submit"></span>
+</div>
+</form>(form isnt completely functional, database hasnt been setup yet)
+
+<%= link_to "Completed Quote", welcome_reqcomplete_path %>
+<br><br><br><br>
+
+extrapolated from the following notes: <br>
+<br>upload schematics (we accept png file types) -->  (if you dont have schematics, please click here)
+<br>panel size --->
+<br> date you'd like them to be completed by(doesnt include shipping time) -->
+<br> what parts --->
+<br> if you have parts, upload pictures here --->
+<br>
+<br> {javascript part here - take all this information, pair some with time and cost expenses, and send them to amrit}  ____|
+<br>
+<br> </p>
+<br>
+<br>
+<br> plan
+<br>
+<br> shipping or delivery (no onsite development)
+<br> sizes are 10 in^3 to 70in^3
+<br> they would say,
+
+<br> do i have schematics? and upload schematics __y __n
+<br> ##talk to an engineer to create schematics - -
+<br>
+<br> ## conversation and full quote here
+<br>
+<br> what size is the panel sizes?  (dropdown menu: options)
+<br> what do you want in the panel (dropdown menu: options)
+<br> 				100 selections with quantities (each item says: "i have this product onhand", "i do not have this product and need it sourced")
+<br>         use the order v.03 tab and make up some random items.
+<br>
+<br> when do you want this item by? (4-6, 3-4, 2-3, 1-2 weeks, within 1 week)
+<br>
+<br> If i have pieces to ship, i should show you a picture of them. also with specs.
+<br>     ----
+<br> amrit  GETS the email that tells the quote of est. time and cost.
+<br> amrit gives quote for this machine (add delivery and shipping)
+<br> quote has (cost, delivery date verification ) , verify that the items are the right thing.
+ <br>
+<br> tell me where to ship my pieces
+<br> -----
+<!-- <br> confirming payment and confirmed deliver of pieces will start the process
+<br> 100% of cost of materials amrit has to source
+<br> and 30% labor costs (and  30% of the engineering if that was done) -->
+<br> ---
+<br>
+<br>
+<br> http://www.boxcadexm.com/RDWebPlayer/Resources_EXM/English_V20171214_1/RDTemplate.htm?ctxID=2018-01-04-22-55-57-76-018
+<br>
+<br>
+ easiest customer would have schematics and source all the items themselves

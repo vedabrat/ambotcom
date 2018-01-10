@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
-  root 'welcome#index'
+  devise_for :users
+  root 'welcome#myProfile'
   get 'welcome/about'
   get 'welcome/contact'
   get 'welcome/gallery'
@@ -9,7 +10,11 @@ Rails.application.routes.draw do
   get 'welcome/services'
   get 'welcome/tips'
   get 'welcome/view'
-  get 'welcome/index'
+  get 'welcome/req_quote'
+  get 'welcome/man_quote'
+  get 'welcome/reqcomplete'
+  get 'welcome/completedorders'
+  get 'welcome/myProfile'
 
   resources :welcome
 
