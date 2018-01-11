@@ -15,8 +15,12 @@ Rails.application.routes.draw do
   get 'welcome/reqcomplete'
   get 'welcome/completedorders'
   get 'welcome/myProfile'
-
+  get 'charges/new'
+  get 'charges/charges' 
+  get 'charges/create'
   resources :welcome
+  resources :charges
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
