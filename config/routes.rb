@@ -1,23 +1,27 @@
 Rails.application.routes.draw do
 
   devise_for :users
-  root 'welcome#myProfile'
+  root 'welcome#register'
   get 'welcome/about'
   get 'welcome/contact'
   get 'welcome/gallery'
   get 'welcome/index'
   get 'welcome/plan'
+  get 'welcome/quoteOptions'
   get 'welcome/services'
   get 'welcome/tips'
   get 'welcome/view'
   get 'welcome/req_quote'
+  get 'welcome/register'
   get 'welcome/man_quote'
   get 'welcome/reqcomplete'
   get 'welcome/completedorders'
   get 'welcome/myProfile'
   get 'charges/new'
-  get 'charges/charges' 
+  get 'charges/charges'
   get 'charges/create'
+  get 'users/sign_in'
+  get 'users/sign_up'
   resources :welcome
   resources :charges
 
