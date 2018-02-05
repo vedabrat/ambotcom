@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   devise_for :users
-  root 'welcome#register'
+  root 'welcome#index'
   get 'welcome/about'
   get 'welcome/contact'
   get 'welcome/gallery'
