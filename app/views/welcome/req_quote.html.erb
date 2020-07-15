@@ -232,261 +232,262 @@
 
 
 
-
-<div class="hidden" hidden="true">
-
-  <h1>New Quote</h1>
-  <p>
-  <form action="https://getsimpleform.com/messages?form_api_token=b3a753b8a8f9dd973108208981f54524" method="post">
-    <div>
-      <span><label>Upload Schematics</label></span>
-      <span><button name="schematics">Choose files to upload </button></span>
-    </div>
-    <div>
-      <span><label>Select Panel Size</label></span>
-      <span>
-        <select name="sizes" id="sizes">
-          <option value="1x1" id=“1x1“>1x1</option>
-          <option value="2x2" id=“2x2“>2x2</option>
-          <option value="3x3" id=“3x3“>3x3</option>
-          <option value="4x4" id=“4x4“>4x4</option>
-          <option value="5x5" id=“5x5“>5x5</option>
-          <option value="6x6" id=“6x6“>6x6</option>
-          <option value="7x7" id=“7x7“>7x7</option>
-          <option value="8x8" id=“8x8“>8x8</option>
-          <option value="9x9" id=“9x9“>9x9</option>
-          <option value="10x10" id=“10x10“>10x10</option>
-        </select>
-
-        <input type="text" name="qty1" value="Qty">
-
-      </span>
-    </div>
-    <div>
-      <span><label>Parts Selection</label></span>
-      <span>
-        <br>Fusing or CB
-        <select name='fusing_or_CB' id="fusing_or_CB">
-          <option value="1pole" id=“1pole“>1 pole</option>
-          <option value="2pole" id=“2pole“>2 pole</option>
-          <option value="3pole" id=“3pole“>3 pole</option>
-        </select>
-        <input type="text" name="qty2" value="Qty">
-        <br>Contactors
-        <select name='contactors' id="contactors">
-          <option value="0-50A" id=“0-50A“>0-50A</option>
-          <option value="60-150A" id=“60-150A“>60-150A</option>
-          <option value="200A+" id=“200A+“>200A +</option>
-        </select>
-        <input type="text" name="qty3" value="Qty">
-        <br>Relays
-        <select name='relays' id="relays">
-          <option value="2polerelay" id=“2polerelay“>2 pole relay</option>
-          <option value="forceguided" id=“forceguided“>forceguided</option>
-          <option value="safetyrelays" id=“safetyrelays“>safety relays</option>
-        </select>
-        <input type="text" name="qty4" value="Qty">
-        <br>Transformer
-        <select name='transformer' id="transformer">
-          <option value="50-1000VA" id=“50-1000VA“>50-1000 VA</option>
-          <option value="1500-3KVA" id=“1500-3KVA“>1500-3KVA</option>
-        </select>
-        <input type="text" name="qty5" value="Qty">
-        <!-- <br> -->
-        <!-- <select name='power supply'>
-        </select> -->
-        <br>PLC
-        <select name='plc' id="plc">
-          <option value="mainunitandpowersupply" id=“mainunitandpowersupply“>main unit and power supply</option>
-          <option value="digInOut16pt" id=“digInOut16pt“>digital - input / output  (16pt)   (omron)</option>
-          <option value="analInOut4pt" id=“analInOut4pt“>analog - inout / output  (4pt)</option>
-        </select>
-        <input type="text" name="qty6" value="Qty">
-        <br>VFDS
-        <select name='vfds' id="vfds">
-          <option value="analInOut4pt2" id=“analInOut4pt2“>analog - inout / output  (4pt)</option>
-        </select>
-        <input type="text" name="qty7" value="Qty">
-        <br>Special Device or Custom Modification
-        <select name='SpecialDeviceOrCustomMod' id="SpecialDeviceOrCustomMod">
-          <option value="LAYOUTOFENCLOSUREANDDOOR" id=“LAYOUTOFENCLOSUREANDDOOR“>Layout of Enclosure and Door</option>
-        </select>
-        <input type="text" name="qty8" value="Qty">
-        <br>Pilot Device
-        <select name='pilotDevice(pushbuttonsswlight)' id="pilotDevice">
-          <option value="1-10 devices" id=“1-10 devices“>1-10 devices</option>
-          <option value="eachAdditionalDevice" id=“eachAdditionalDevice“>each additional device</option>
-          <option value="hmi" id=“hmi“>hmi</option>
-          <option value="cable glands" id=“cable glands“>cableglands</option>
-          <option value="externalConnectionQuickConnect" id=“externalConnectionQuickConnect“>external connection quick connect</option>
-          <option value="punchMountAndWireExternamComponents" id=“punchMountAndWireExternamComponents“>PUNCH Mount and Wire External Components</option>
-          <option value="pilotDevicePushButSswLight" id=“pilotDevicePushButSswLight“>pilot device  (pushbutton, ssw, light)</option>
-          <option value="perDevice" id=“perDevice“>per device</option>
-          <option value="hmi" id=“hmi“>hmi</option>
-          <option value="cableGlands1" id=“cableGlands1“>cable glands</option>
-          <option value="externamConnectQuickConnect" id=“externamConnectQuickConnect“>external connection quick connect</option>
-          <option value="1-10poles" id=“1-10poles“>1-10 poles</option>
-          <option value="12-16poles" id=“12-16poles“>12-16 poles</option>
-          <option value="coolingFanintakeFilter" id=“coolingFanintakeFilter“>cooling fan /intake filter</option>
-        </select>
-        <input class="input" type="text" name="qty9" value="Qty">
-
-        <!-- <input name="parts" type="text" class="textbox"></span> -->
-    </div>
-    <div>
-      <span><label>Requested Completion Date</label></span>
-      <span>
-        <select name="RTTC" id="RTTC">
-          <option value="4to6" id=“4to6“>4-6 weeks</option>
-          <option value="3to4" id=“3to4“>3-4 weeks</option>
-          <option value="2to3" id=“2to3“>2-3 weeks</option>
-          <option value="1to2" id=“1to2“>1-2 weeks</option>
-          <option value="1week" id=“1week“>within 1 week</option>
-        </select>
-      </span>
-    </div>
-    <div>
-      <span><label>Upload Pictures of Onhand Parts</label></span>
-      <span><button name="onhandparts">Choose files to upload </button>
-      <input type="text" name="qty10" value="Qty"></span>
-    </div>
-
-   <div>
-      <span><input type="submit" value="Submit"></span>
-  </div>
-  </form>
-
-  <%= link_to "Completed Quote", welcome_reqcomplete_path %>
-  <br><br><br><br>
-  <p style="border: 1px solid green"onclick="doquote()" value="calquote" >Click here to Calculate Quote</p>
-
-  <p  id="quoteval"> Click above to get a time quote:</p>
-  <input  type='submit' value='Submit - (only click once)' />
-  <script type="text/javascript">
-  function doquote(){
-  // make a function to calculate the quote
-  var totalquotetimeinminutes = 0;
-  switch(document.getElementById('sizes').value) {
-    case "1x1":
-        totalquotetimeinminutes += 0
-    case "2x2":
-        totalquotetimeinminutes += 0
-    case "3x3":
-        totalquotetimeinminutes += 0
-    case "4x4":
-        totalquotetimeinminutes += 0
-    case "5x5":
-        totalquotetimeinminutes += 0
-    case "6x6":
-        totalquotetimeinminutes += 0
-    case "7x7":
-        totalquotetimeinminutes += 0
-    case "8x8":
-        totalquotetimeinminutes += 0
-    case "9x9":
-        totalquotetimeinminutes += 0
-    case "10x10":
-        totalquotetimeinminutes += 0
-  }
-  switch(document.getElementById('fusing_or_CB').value) {
-    case "1pole":
-        totalquotetimeinminutes += 10
-    case "2pole":
-        totalquotetimeinminutes += 20
-    case "3pole":
-        totalquotetimeinminutes += 30
-
-  }
-  switch(document.getElementById('contactors').value) {
-    case "0-50A":
-        totalquotetimeinminutes += 30
-    case "60-150A":
-        totalquotetimeinminutes += 60
-    case "200A+":
-        totalquotetimeinminutes += 90
-
-  }
-  switch(document.getElementById('relays').value) {
-    case "2polerelay":
-        totalquotetimeinminutes += 20
-    case "forceguided":
-        totalquotetimeinminutes += 30
-    case "safetyrelays":
-        totalquotetimeinminutes += 60
-
-  }
-  switch(document.getElementById('transformer').value) {
-    case "50-1000VA":
-        totalquotetimeinminutes += 30
-    case "1500-3KVA":
-        totalquotetimeinminutes += 60
-  }
-  switch(document.getElementById('plc').value) {
-    case "mainunitandpowersupply":
-        totalquotetimeinminutes += 30
-    case "digInOut16pt":
-        totalquotetimeinminutes += 60
-    case "analInOut4pt":
-        totalquotetimeinminutes += 30
-  }
-  switch(document.getElementById('vfds').value) {
-    case "analInOut4pt2":
-        totalquotetimeinminutes += 60
-  }
-  switch(document.getElementById('SpecialDeviceOrCustomMod').value) {
-    case "LAYOUTOFENCLOSUREANDDOOR":
-        totalquotetimeinminutes += 60
-  }
-  switch(document.getElementById('pilotDevice').value) {
-    case "1-10 devices":
-        totalquotetimeinminutes += 60
-    case "each additional device":
-        totalquotetimeinminutes += 10
-    case "hmi":
-        totalquotetimeinminutes += 30
-    case "cable glands":
-        totalquotetimeinminutes += 10
-    case "external connection quick connect":
-        totalquotetimeinminutes += 10
-  }
-  switch(document.getElementById('pilotDevice').value) {
-    case "1-10 devices":
-        totalquotetimeinminutes += 60
-    case "eachAdditionalDevice":
-        totalquotetimeinminutes += 10
-    case "hmi":
-        totalquotetimeinminutes += 30
-    case "cable glands":
-        totalquotetimeinminutes += 10
-    case "externalConnectionQuickConnect":
-        totalquotetimeinminutes += 10
-    case "punchMountAndWireExternamComponents":
-        totalquotetimeinminutes += 5
-    case "pilotDevicePushButSswLight":
-        totalquotetimeinminutes += 5
-    case "perDevice":
-        totalquotetimeinminutes += 20
-    case "hmi":
-        totalquotetimeinminutes += 60
-    case "cableGlands1":
-        totalquotetimeinminutes += 10
-    case "externamConnectQuickConnect":
-        totalquotetimeinminutes += 10
-    case "1-10poles":
-        totalquotetimeinminutes += 30
-    case "12-16poles":
-        totalquotetimeinminutes += 60
-    case "coolingFanintakeFilter":
-        totalquotetimeinminutes += 90
-
-  }
-
-        totalquotetimeinhours = (totalquotetimeinminutes/60).toFixed(2);
-
-  document.getElementById('quoteval').innerHTML = "It will take approximately " + String(totalquotetimeinhours) + " hours for this project to be done.";
-  };
-  //make a function to change the quoteval tag on the HTML
-
-
-  </script>
-</div>
+<script>
+// <div class="hidden" hidden="true">
+//
+//   <h1>New Quote</h1>
+//   <p>
+//   <form action="https://getsimpleform.com/messages?form_api_token=b3a753b8a8f9dd973108208981f54524" method="post">
+//     <div>
+//       <span><label>Upload Schematics</label></span>
+//       <span><button name="schematics">Choose files to upload </button></span>
+//     </div>
+//     <div>
+//       <span><label>Select Panel Size</label></span>
+//       <span>
+//         <select name="sizes" id="sizes">
+//           <option value="1x1" id=“1x1“>1x1</option>
+//           <option value="2x2" id=“2x2“>2x2</option>
+//           <option value="3x3" id=“3x3“>3x3</option>
+//           <option value="4x4" id=“4x4“>4x4</option>
+//           <option value="5x5" id=“5x5“>5x5</option>
+//           <option value="6x6" id=“6x6“>6x6</option>
+//           <option value="7x7" id=“7x7“>7x7</option>
+//           <option value="8x8" id=“8x8“>8x8</option>
+//           <option value="9x9" id=“9x9“>9x9</option>
+//           <option value="10x10" id=“10x10“>10x10</option>
+//         </select>
+//
+//         <input type="text" name="qty1" value="Qty">
+//
+//       </span>
+//     </div>
+//     <div>
+//       <span><label>Parts Selection</label></span>
+//       <span>
+//         <br>Fusing or CB
+//         <select name='fusing_or_CB' id="fusing_or_CB">
+//           <option value="1pole" id=“1pole“>1 pole</option>
+//           <option value="2pole" id=“2pole“>2 pole</option>
+//           <option value="3pole" id=“3pole“>3 pole</option>
+//         </select>
+//         <input type="text" name="qty2" value="Qty">
+//         <br>Contactors
+//         <select name='contactors' id="contactors">
+//           <option value="0-50A" id=“0-50A“>0-50A</option>
+//           <option value="60-150A" id=“60-150A“>60-150A</option>
+//           <option value="200A+" id=“200A+“>200A +</option>
+//         </select>
+//         <input type="text" name="qty3" value="Qty">
+//         <br>Relays
+//         <select name='relays' id="relays">
+//           <option value="2polerelay" id=“2polerelay“>2 pole relay</option>
+//           <option value="forceguided" id=“forceguided“>forceguided</option>
+//           <option value="safetyrelays" id=“safetyrelays“>safety relays</option>
+//         </select>
+//         <input type="text" name="qty4" value="Qty">
+//         <br>Transformer
+//         <select name='transformer' id="transformer">
+//           <option value="50-1000VA" id=“50-1000VA“>50-1000 VA</option>
+//           <option value="1500-3KVA" id=“1500-3KVA“>1500-3KVA</option>
+//         </select>
+//         <input type="text" name="qty5" value="Qty">
+//         <!-- <br> -->
+//         <!-- <select name='power supply'>
+//         </select> -->
+//         <br>PLC
+//         <select name='plc' id="plc">
+//           <option value="mainunitandpowersupply" id=“mainunitandpowersupply“>main unit and power supply</option>
+//           <option value="digInOut16pt" id=“digInOut16pt“>digital - input / output  (16pt)   (omron)</option>
+//           <option value="analInOut4pt" id=“analInOut4pt“>analog - inout / output  (4pt)</option>
+//         </select>
+//         <input type="text" name="qty6" value="Qty">
+//         <br>VFDS
+//         <select name='vfds' id="vfds">
+//           <option value="analInOut4pt2" id=“analInOut4pt2“>analog - inout / output  (4pt)</option>
+//         </select>
+//         <input type="text" name="qty7" value="Qty">
+//         <br>Special Device or Custom Modification
+//         <select name='SpecialDeviceOrCustomMod' id="SpecialDeviceOrCustomMod">
+//           <option value="LAYOUTOFENCLOSUREANDDOOR" id=“LAYOUTOFENCLOSUREANDDOOR“>Layout of Enclosure and Door</option>
+//         </select>
+//         <input type="text" name="qty8" value="Qty">
+//         <br>Pilot Device
+//         <select name='pilotDevice(pushbuttonsswlight)' id="pilotDevice">
+//           <option value="1-10 devices" id=“1-10 devices“>1-10 devices</option>
+//           <option value="eachAdditionalDevice" id=“eachAdditionalDevice“>each additional device</option>
+//           <option value="hmi" id=“hmi“>hmi</option>
+//           <option value="cable glands" id=“cable glands“>cableglands</option>
+//           <option value="externalConnectionQuickConnect" id=“externalConnectionQuickConnect“>external connection quick connect</option>
+//           <option value="punchMountAndWireExternamComponents" id=“punchMountAndWireExternamComponents“>PUNCH Mount and Wire External Components</option>
+//           <option value="pilotDevicePushButSswLight" id=“pilotDevicePushButSswLight“>pilot device  (pushbutton, ssw, light)</option>
+//           <option value="perDevice" id=“perDevice“>per device</option>
+//           <option value="hmi" id=“hmi“>hmi</option>
+//           <option value="cableGlands1" id=“cableGlands1“>cable glands</option>
+//           <option value="externamConnectQuickConnect" id=“externamConnectQuickConnect“>external connection quick connect</option>
+//           <option value="1-10poles" id=“1-10poles“>1-10 poles</option>
+//           <option value="12-16poles" id=“12-16poles“>12-16 poles</option>
+//           <option value="coolingFanintakeFilter" id=“coolingFanintakeFilter“>cooling fan /intake filter</option>
+//         </select>
+//         <input class="input" type="text" name="qty9" value="Qty">
+//
+//         <!-- <input name="parts" type="text" class="textbox"></span> -->
+//     </div>
+//     <div>
+//       <span><label>Requested Completion Date</label></span>
+//       <span>
+//         <select name="RTTC" id="RTTC">
+//           <option value="4to6" id=“4to6“>4-6 weeks</option>
+//           <option value="3to4" id=“3to4“>3-4 weeks</option>
+//           <option value="2to3" id=“2to3“>2-3 weeks</option>
+//           <option value="1to2" id=“1to2“>1-2 weeks</option>
+//           <option value="1week" id=“1week“>within 1 week</option>
+//         </select>
+//       </span>
+//     </div>
+//     <div>
+//       <span><label>Upload Pictures of Onhand Parts</label></span>
+//       <span><button name="onhandparts">Choose files to upload </button>
+//       <input type="text" name="qty10" value="Qty"></span>
+//     </div>
+//
+//    <div>
+//       <span><input type="submit" value="Submit"></span>
+//   </div>
+//   </form>
+//
+//   <%= link_to "Completed Quote", welcome_reqcomplete_path %>
+//   <br><br><br><br>
+//   <p style="border: 1px solid green"onclick="doquote()" value="calquote" >Click here to Calculate Quote</p>
+//
+//   <p  id="quoteval"> Click above to get a time quote:</p>
+//   <input  type='submit' value='Submit - (only click once)' />
+//   <script type="text/javascript">
+//   function doquote(){
+//   // make a function to calculate the quote
+//   var totalquotetimeinminutes = 0;
+//   switch(document.getElementById('sizes').value) {
+//     case "1x1":
+//         totalquotetimeinminutes += 0
+//     case "2x2":
+//         totalquotetimeinminutes += 0
+//     case "3x3":
+//         totalquotetimeinminutes += 0
+//     case "4x4":
+//         totalquotetimeinminutes += 0
+//     case "5x5":
+//         totalquotetimeinminutes += 0
+//     case "6x6":
+//         totalquotetimeinminutes += 0
+//     case "7x7":
+//         totalquotetimeinminutes += 0
+//     case "8x8":
+//         totalquotetimeinminutes += 0
+//     case "9x9":
+//         totalquotetimeinminutes += 0
+//     case "10x10":
+//         totalquotetimeinminutes += 0
+//   }
+//   switch(document.getElementById('fusing_or_CB').value) {
+//     case "1pole":
+//         totalquotetimeinminutes += 10
+//     case "2pole":
+//         totalquotetimeinminutes += 20
+//     case "3pole":
+//         totalquotetimeinminutes += 30
+//
+//   }
+//   switch(document.getElementById('contactors').value) {
+//     case "0-50A":
+//         totalquotetimeinminutes += 30
+//     case "60-150A":
+//         totalquotetimeinminutes += 60
+//     case "200A+":
+//         totalquotetimeinminutes += 90
+//
+//   }
+//   switch(document.getElementById('relays').value) {
+//     case "2polerelay":
+//         totalquotetimeinminutes += 20
+//     case "forceguided":
+//         totalquotetimeinminutes += 30
+//     case "safetyrelays":
+//         totalquotetimeinminutes += 60
+//
+//   }
+//   switch(document.getElementById('transformer').value) {
+//     case "50-1000VA":
+//         totalquotetimeinminutes += 30
+//     case "1500-3KVA":
+//         totalquotetimeinminutes += 60
+//   }
+//   switch(document.getElementById('plc').value) {
+//     case "mainunitandpowersupply":
+//         totalquotetimeinminutes += 30
+//     case "digInOut16pt":
+//         totalquotetimeinminutes += 60
+//     case "analInOut4pt":
+//         totalquotetimeinminutes += 30
+//   }
+//   switch(document.getElementById('vfds').value) {
+//     case "analInOut4pt2":
+//         totalquotetimeinminutes += 60
+//   }
+//   switch(document.getElementById('SpecialDeviceOrCustomMod').value) {
+//     case "LAYOUTOFENCLOSUREANDDOOR":
+//         totalquotetimeinminutes += 60
+//   }
+//   switch(document.getElementById('pilotDevice').value) {
+//     case "1-10 devices":
+//         totalquotetimeinminutes += 60
+//     case "each additional device":
+//         totalquotetimeinminutes += 10
+//     case "hmi":
+//         totalquotetimeinminutes += 30
+//     case "cable glands":
+//         totalquotetimeinminutes += 10
+//     case "external connection quick connect":
+//         totalquotetimeinminutes += 10
+//   }
+//   switch(document.getElementById('pilotDevice').value) {
+//     case "1-10 devices":
+//         totalquotetimeinminutes += 60
+//     case "eachAdditionalDevice":
+//         totalquotetimeinminutes += 10
+//     case "hmi":
+//         totalquotetimeinminutes += 30
+//     case "cable glands":
+//         totalquotetimeinminutes += 10
+//     case "externalConnectionQuickConnect":
+//         totalquotetimeinminutes += 10
+//     case "punchMountAndWireExternamComponents":
+//         totalquotetimeinminutes += 5
+//     case "pilotDevicePushButSswLight":
+//         totalquotetimeinminutes += 5
+//     case "perDevice":
+//         totalquotetimeinminutes += 20
+//     case "hmi":
+//         totalquotetimeinminutes += 60
+//     case "cableGlands1":
+//         totalquotetimeinminutes += 10
+//     case "externamConnectQuickConnect":
+//         totalquotetimeinminutes += 10
+//     case "1-10poles":
+//         totalquotetimeinminutes += 30
+//     case "12-16poles":
+//         totalquotetimeinminutes += 60
+//     case "coolingFanintakeFilter":
+//         totalquotetimeinminutes += 90
+//
+//   }
+//
+//         totalquotetimeinhours = (totalquotetimeinminutes/60).toFixed(2);
+//
+//   document.getElementById('quoteval').innerHTML = "It will take approximately " + String(totalquotetimeinhours) + " hours for this project to be done.";
+//   };
+//   //make a function to change the quoteval tag on the HTML
+//
+//
+//   </ loljk script>
+// </div>
+</script>
