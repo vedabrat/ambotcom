@@ -88,12 +88,11 @@
                 <a class="dropdown-item">Other</a>
                 <!--  Program in a function to show the following textbox only when other is selected-->
                 <input type="text" class="form-control" name="" value="" placeholder="Please specify your industry.">
-
               </div>
             </div>
           </div>
         </div>
-        <br><br><br>
+        <br>
         <hr width="100%">
         <div class="row">
           <div class="col">
@@ -115,8 +114,6 @@
             </div>
             </p>
             <br>
-
-            <br>
             <p>
             Required Certification
             <div class="btn-group">
@@ -136,8 +133,6 @@
               </div>
             </div>
             </p>
-            <br>
-
             <br>
             <p>
               Incoming Voltage
@@ -159,7 +154,6 @@
             </div>
             </p>
             <br>
-
           </div>
           <div class="col">
             <p>
@@ -174,12 +168,9 @@
                 <a class="dropdown-item">CAT II</a>
                 <a class="dropdown-item">CAT III</a>
                 <a class="dropdown-item">CAT IV</a>
-
               </div>
             </div>
             </p>
-            <br>
-
             <br>
             <p>
               NEMA Rating
@@ -206,8 +197,6 @@
             </div>
             </p>
             <br>
-
-            <br>
             <p>
               Control Voltage
             <div class="btn-group">
@@ -228,17 +217,13 @@
         </div>
         </p>
         <br>
-
-        <br>
-        <br>
-        <br>
         <div class="row">
           <div class="col">
               PLC Required?
             <br>
             <p>
               <form class="" action="" method="post">
-                <label for="Yes">
+                <label for="Yes" onclick="toggleSomething(plcHidden1)">
                   Yes
                 </label>
                 <input type="radio" name="" value="">
@@ -250,6 +235,8 @@
             </p>
             <!--  Program in a function to show the following COLLAPSED section only when Yes is selected-->
             <!--  COLLAPSED  -->
+            <div class="hidden" id="plcHidden1" hidden="true">
+
               Will you be supplying the PLC?
             <br>
             <p>
@@ -268,7 +255,7 @@
             <br>
             <p>
               <form class="" action="" method="post">
-                <label for="Yes">
+                <label for="Yes" onclick=toggleSomething(plcHidden2)>
                   Yes
                 </label>
                 <input type="radio" name="" value="">
@@ -280,43 +267,154 @@
             </p>
             <!--  TODO: Hide the following COLLAPSED2 SECTION until YES is selected from the above form choice-->
             <!--  COLLAPSED2 -->
-            <input type="text" class="form-control" name="" value="" placeholder="Please specify your industry.">
+            <div class="hidden" id="plcHidden2" hidden="true">
+              <input type="text" class="form-control" name="" value="" placeholder="Please enter the make/model of the PLC required.">
+            </div>
+            <script type="text/javascript">
+              function toggleSomething(id){
+                id = "#" + id.to_str()
+                ($(id).hidden == "true")?($(id).hidden = "False"):($(id).hidden = "true")
+                // brute script below
+                // ($("#plcHidden2").hidden == "true")?($("#plcHidden2").hidden = "False"):($("#plcHidden2").hidden = "true")
 
+              }
+
+            </script>
             <!--  COLLAPSED2 END  -->
-            <!--  COLLAPSED END  -->
-
             <br>
+            Would you like us to include a quote for programming?
+            <br>
+            <p>
+              <form class="" action="" method="post">
+                <label for="Yes">
+                  Yes
+                </label>
+                <input type="radio" name="" value="">
+                <label for="No">
+                  No
+                </label>
+                <input type="radio" name="" value="">
+              </form>
+            </p>
+            </div>
+            <!--  COLLAPSED END  -->
             <br>
               HMI Required?
-            <br>
+              <br>
+              <p>
+                <form class="" action="" method="post">
+                  <label for="Yes">
+                    Yes
+                  </label>
+                  <input type="radio" name="" value="">
+                  <label for="No">
+                    No
+                  </label>
+                  <input type="radio" name="" value="">
+                </form>
+              </p>              <!--  Program in a function to show the following COLLAPSED section only when Yes is selected-->
+              <!--  COLLAPSED  -->
+              Will you be supplying the HMI?
+              <br>
+              <p>
+                <form class="" action="" method="post">
+                  <label for="Yes">
+                    Yes
+                  </label>
+                  <input type="radio" name="" value="">
+                  <label for="No">
+                    No
+                  </label>
+                  <input type="radio" name="" value="">
+                </form>
+              </p>
+                Do you require a specific HMI?
+              <br>
+              <p>
+                <form class="" action="" method="post">
+                  <label for="Yes">
+                    Yes
+                  </label>
+                  <input type="radio" name="" value="">
+                  <label for="No">
+                    No
+                  </label>
+                  <input type="radio" name="" value="">
+                </form>
+              </p>
+              <!--  TODO: Hide the following COLLAPSED2 SECTION until YES is selected from the above form choice-->
+              <!--  COLLAPSED2 -->
+              <input type="text" class="form-control" name="" value="" placeholder="Please enter the make/model of HMI required.">
+              <!--  COLLAPSED2 END  -->
+              <br>
+              Would you like us to include a quote for programming?
+              <br>
+              <p>
+                <form class="" action="" method="post">
+                  <label for="Yes">
+                    Yes
+                  </label>
+                  <input type="radio" name="" value="">
+                  <label for="No">
+                    No
+                  </label>
+                  <input type="radio" name="" value="">
+                </form>
+              </p>
+              <!--  COLLAPSED END  -->
             <p>
-              <form class="" action="" method="post">
-                <label for="Yes">
-                  Yes
-                </label>
-                <input type="radio" name="" value="">
-                <label for="No">
-                  No
-                </label>
-                <input type="radio" name="" value="">
-              </form>
             </p>
             <br>
-            <br>
+            <!--  Something's misaligned in the html-->
               Buttons Required?
             <br>
-            <p>
-              <form class="" action="" method="post">
-                <label for="Yes">
-                  Yes
-                </label>
-                <input type="radio" name="" value="">
-                <label for="No">
-                  No
-                </label>
-                <input type="radio" name="" value="">
-              </form>
-            </p>
+              <p>
+                <form class="" action="" method="post">
+                  <label for="Yes">
+                    Yes
+                  </label>
+                  <input type="radio" name="" value="">
+                  <label for="No">
+                    No
+                  </label>
+                  <input type="radio" name="" value="">
+                </form>
+              </p>              <!--  Program in a function to show the following COLLAPSED section only when Yes is selected-->
+              <!--  COLLAPSED  -->
+              Will you be supplying the buttons?
+              <br>
+              <p>
+                <form class="" action="" method="post">
+                  <label for="Yes">
+                    Yes
+                  </label>
+                  <input type="radio" name="" value="">
+                  <label for="No">
+                    No
+                  </label>
+                  <input type="radio" name="" value="">
+                </form>
+              </p>
+                Do you require specific buttons?
+              <br>
+              <p>
+                <form class="" action="" method="post">
+                  <label for="Yes">
+                    Yes
+                  </label>
+                  <input type="radio" name="" value="">
+                  <label for="No">
+                    No
+                  </label>
+                  <input type="radio" name="" value="">
+                </form>
+              </p>
+              <!--  TODO: Hide the following COLLAPSED2 SECTION until YES is selected from the above form choice-->
+              <!--  COLLAPSED2 -->
+              <input type="text" class="form-control" name="" value="" placeholder="Please enter the make/model of any buttons required.">
+              <!--  COLLAPSED2 END  -->
+              <!--  COLLAPSED END  -->
+            <br>
           </div>
           <div class="col">
             Motor Nameplate Info
@@ -338,7 +436,6 @@
             Please provide any additional information required.
             <textarea name="message" class="form-control" rows="10" cols="30" placeholder="">
             </textarea>
-            <input type="paragraph" class="form-control" name="" value="">
           </div>
           <div class="col">
             <p>
@@ -390,10 +487,9 @@
           <br>
           there is a nice image of design here
         </div>
-
       </div>
     </div>
-    <div class="col-3">My form begis here
+    <div class="col-3">My form begins here
     </div>
   </div>
 </div>
