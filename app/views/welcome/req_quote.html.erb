@@ -223,20 +223,15 @@
             <br>
             <p>
               <form class="" action="" method="post">
-                <label for="Yes" onclick="toggleSomething(plcHidden1)">
-                  Yes
-                </label>
-                <input type="radio" name="" value="">
-                <label for="No">
-                  No
-                </label>
-                <input type="radio" name="" value="">
+                <% ["Yes", "No"].each do |val| %>
+                  <%= radio_button_tag :val, val %>
+                  <%= val %>
+                <% end %>
               </form>
             </p>
             <!--  Program in a function to show the following COLLAPSED section only when Yes is selected-->
             <!--  COLLAPSED  -->
-            <div class="hidden" id="plcHidden1" hidden="true">
-
+            <div class="" id="plcHidden1" >
               Will you be supplying the PLC?
             <br>
             <p>
@@ -267,7 +262,7 @@
             </p>
             <!--  TODO: Hide the following COLLAPSED2 SECTION until YES is selected from the above form choice-->
             <!--  COLLAPSED2 -->
-            <div class="hidden" id="plcHidden2" hidden="true">
+            <div id="plcHidden2" hidden="">
               <input type="text" class="form-control" name="" value="" placeholder="Please enter the make/model of the PLC required.">
             </div>
             <script type="text/javascript">
@@ -276,9 +271,7 @@
                 ($(id).hidden == "true")?($(id).hidden = "False"):($(id).hidden = "true")
                 // brute script below
                 // ($("#plcHidden2").hidden == "true")?($("#plcHidden2").hidden = "False"):($("#plcHidden2").hidden = "true")
-
               }
-
             </script>
             <!--  COLLAPSED2 END  -->
             <br>
