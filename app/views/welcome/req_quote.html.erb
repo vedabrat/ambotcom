@@ -79,22 +79,21 @@
                 <span class="sr-only">Toggle Dropdown</span>
               </button>
               <div class="dropdown-menu">
-                <a class="dropdown-item" onclick="IndustryButton("Automotive")">Automotive</a>
-                <a class="dropdown-item" onclick="IndustryButton("Energy")">Energy</a>
-                <a class="dropdown-item" onclick="IndustryButton("Food Beverage")">Food Beverage</a>
-                <a class="dropdown-item" onclick="IndustryButton("Manufacturing")">Manufacturing</a>
-                <a class="dropdown-item" onclick="IndustryButton("Packaging")">Packaging</a>
-                <a class="dropdown-item" onclick="IndustryButton("Pharmaceutical")">Pharmaceutical</a>
-                <a class="dropdown-item" onclick="IndustryButton("Other")">Other</a>
+                <a class="dropdown-item" onclick=IndustryButton("Automotive")>Automotive</a>
+                <a class="dropdown-item" onclick=IndustryButton("Energy")>Energy</a>
+                <a class="dropdown-item" onclick=IndustryButton("FoodBeverage")>Food Beverage</a>
+                <a class="dropdown-item" onclick=IndustryButton("Manufacturing")>Manufacturing</a>
+                <a class="dropdown-item" onclick=IndustryButton("Packaging")>Packaging</a>
+                <a class="dropdown-item" onclick=IndustryButton("Pharmaceutical")>Pharmaceutical</a>
+                <a class="dropdown-item" onclick=IndustryButton("Other")>Other</a>
                 <!--  Program in a function to show the following textbox only when other is selected-->
                 <input type="text" class="form-control" name="" value="" placeholder="Please specify your industry.">
-                <script type="text/javascript">
-                  function IndustryButton(arg){
-                    console.log(arg)
-                    document.getElementById(arg).innerText = arg
-                  }
-                </script>
               </div>
+              <script type="text/javascript">
+              function IndustryButton(thing){
+                document.getElementById("IndustryButton").innerText = thing;
+              }
+              </script>
             </div>
           </div>
         </div>
@@ -105,58 +104,74 @@
             <p>
             Panel Enclosure
             <div class="btn-group">
-              <button type="button" class="btn">---</button>
+              <button type="button" id="PanelEnclosure" class="btn">---</button>
               <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span class="sr-only">Toggle Dropdown</span>
               </button>
               <div class="dropdown-menu">
-                <a class="dropdown-item">Stainless Steel</a>
-                <a class="dropdown-item">Fiber Glass</a>
-                <a class="dropdown-item">Mild Steel</a>
-                <a class="dropdown-item">Other</a>
+                <a class="dropdown-item" onclick=PanelEnclosure("StainlessSteel")>Stainless Steel</a>
+                <a class="dropdown-item" onclick=PanelEnclosure("FiberGlass")>Fiber Glass</a>
+                <a class="dropdown-item" onclick=PanelEnclosure("MildSteel")>Mild Steel</a>
+                <a class="dropdown-item" onclick=PanelEnclosure("Other")>Other</a>
                 <!--  Program in a function to show the following textbox only when other is selected-->
                 <input type="text" class="form-control" name="" value="" placeholder="Please specify the enclosure type.">
               </div>
+              <script type="text/javascript">
+              function PanelEnclosure(thing){
+                document.getElementById("PanelEnclosure").innerText = thing;
+              }
+              </script>
             </div>
+
             </p>
             <br>
             <p>
             Required Certification
             <div class="btn-group">
-              <button type="button" class="btn">---</button>
+              <button id="RequiredCertification" type="button" class="btn">---</button>
               <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span class="sr-only">Toggle Dropdown</span>
               </button>
               <div class="dropdown-menu">
-                <a class="dropdown-item">CSA or ESA</a>
-                <a class="dropdown-item">CSA</a>
-                <a class="dropdown-item">ESA</a>
-                <a class="dropdown-item">UL</a>
-                <a class="dropdown-item">CE</a>
-                <a class="dropdown-item">Other</a>
+                <a class="dropdown-item" onclick=RequiredCertification("CSAorESA")>CSA or ESA</a>
+                <a class="dropdown-item" onclick=RequiredCertification("CSA")>CSA</a>
+                <a class="dropdown-item" onclick=RequiredCertification("ESA")>ESA</a>
+                <a class="dropdown-item" onclick=RequiredCertification("UL")>UL</a>
+                <a class="dropdown-item" onclick=RequiredCertification("CE")>CE</a>
+                <a class="dropdown-item" onclick=RequiredCertification("Other")>Other</a>
                 <!--  Program in a function to show the following textbox only when other is selected-->
                 <input type="text" class="form-control" name="" value="" placeholder="Please specify the required certification.">
               </div>
+              <script type="text/javascript">
+              function RequiredCertification(thing){
+                document.getElementById("RequiredCertification").innerText = thing;
+              }
+              </script>
             </div>
             </p>
             <br>
             <p>
               Incoming Voltage
             <div class="btn-group">
-              <button type="button" class="btn">---</button>
+              <button id="IncomingVoltage" type="button" class="btn">---</button>
               <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span class="sr-only">Toggle Dropdown</span>
               </button>
               <div class="dropdown-menu">
-                <a class="dropdown-item">24</a>
-                <a class="dropdown-item">24 VDC</a>
-                <a class="dropdown-item">24 V</a>
-                <a class="dropdown-item">110 - 120 V</a>
-                <a class="dropdown-item">220 - 380 V</a>
-                <a class="dropdown-item">360 - 380 V</a>
-                <a class="dropdown-item">440 - 480 V</a>
-                <a class="dropdown-item">550 - 600 V</a>
+                <a class="dropdown-item" onclick=IncomingVoltage("24")>24</a>
+                <a class="dropdown-item" onclick=IncomingVoltage("24VDC")>24 VDC</a>
+                <a class="dropdown-item" onclick=IncomingVoltage("24V")>24 V</a>
+                <a class="dropdown-item" onclick=IncomingVoltage("110-120V")>110-120 V</a>
+                <a class="dropdown-item" onclick=IncomingVoltage("220-380V")>220-380 V</a>
+                <a class="dropdown-item" onclick=IncomingVoltage("360-380V")>360-380 V</a>
+                <a class="dropdown-item" onclick=IncomingVoltage("440-480V")>440-480 V</a>
+                <a class="dropdown-item" onclick=IncomingVoltage("550-600V")>550-600 V</a>
               </div>
+              <script type="text/javascript">
+              function IncomingVoltage(thing){
+                document.getElementById("IncomingVoltage").innerText = thing;
+              }
+              </script>
             </div>
             </p>
             <br>
@@ -165,58 +180,73 @@
             <p>
               Panel Safety Category
             <div class="btn-group">
-              <button type="button" class="btn">---</button>
+              <button id="PanelSafetyCategory" type="button" class="btn">---</button>
               <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span class="sr-only">Toggle Dropdown</span>
               </button>
               <div class="dropdown-menu">
-                <a class="dropdown-item">CAT I</a>
-                <a class="dropdown-item">CAT II</a>
-                <a class="dropdown-item">CAT III</a>
-                <a class="dropdown-item">CAT IV</a>
+                <a class="dropdown-item" onclick=PanelSafetyCategory("CAT-I") >CAT I</a>
+                <a class="dropdown-item" onclick=PanelSafetyCategory("CAT-II") >CAT II</a>
+                <a class="dropdown-item" onclick=PanelSafetyCategory("CAT-III") >CAT III</a>
+                <a class="dropdown-item" onclick=PanelSafetyCategory("CAT-IV") >CAT IV</a>
               </div>
+              <script type="text/javascript">
+              function PanelSafetyCategory(thing){
+                document.getElementById("PanelSafetyCategory").innerText = thing;
+              }
+              </script>
             </div>
             </p>
             <br>
             <p>
               NEMA Rating
             <div class="btn-group">
-              <button type="button" class="btn">---</button>
+              <button id="NemaRating" type="button" class="btn">---</button>
               <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span class="sr-only">Toggle Dropdown</span>
               </button>
               <div class="dropdown-menu">
-                <a class="dropdown-item">1</a>
-                <a class="dropdown-item">2</a>
-                <a class="dropdown-item">3</a>
-                <a class="dropdown-item">3R</a>
-                <a class="dropdown-item">3S</a>
-                <a class="dropdown-item">4</a>
-                <a class="dropdown-item">4X</a>
-                <a class="dropdown-item">5</a>
-                <a class="dropdown-item">6</a>
-                <a class="dropdown-item">6P</a>
-                <a class="dropdown-item">12</a>
-                <a class="dropdown-item">12K</a>
-                <a class="dropdown-item">13</a>
+                <a class="dropdown-item" onclick=NemaRating("1")>1</a>
+                <a class="dropdown-item" onclick=NemaRating("2")>2</a>
+                <a class="dropdown-item" onclick=NemaRating("3")>3</a>
+                <a class="dropdown-item" onclick=NemaRating("3R")>3R</a>
+                <a class="dropdown-item" onclick=NemaRating("3S")>3S</a>
+                <a class="dropdown-item" onclick=NemaRating("4")>4</a>
+                <a class="dropdown-item" onclick=NemaRating("4X")>4X</a>
+                <a class="dropdown-item" onclick=NemaRating("5")>5</a>
+                <a class="dropdown-item" onclick=NemaRating("6")>6</a>
+                <a class="dropdown-item" onclick=NemaRating("6P")>6P</a>
+                <a class="dropdown-item" onclick=NemaRating("12")>12</a>
+                <a class="dropdown-item" onclick=NemaRating("12K")>12K</a>
+                <a class="dropdown-item" onclick=NemaRating("13")>13</a>
               </div>
+              <script type="text/javascript">
+              function NemaRating(thing){
+                document.getElementById("NemaRating").innerText = thing;
+              }
+              </script>
             </div>
             </p>
             <br>
             <p>
               Control Voltage
-            <div class="btn-group">
+            <div id="ControlVoltage" class="btn-group">
               <button type="button" class="btn">---</button>
               <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span class="sr-only">Toggle Dropdown</span>
               </button>
               <div class="dropdown-menu">
-                <a class="dropdown-item">24 VDC</a>
-                <a class="dropdown-item">24 V</a>
-                <a class="dropdown-item">110-120 V</a>
-                <a class="dropdown-item">220-240 V</a>
+                <a class="dropdown-item" onclick=ControlVoltage("24VDC")>24 VDC</a>
+                <a class="dropdown-item" onclick=ControlVoltage("24V")>24 V</a>
+                <a class="dropdown-item" onclick=ControlVoltage("110-120V")>110-120 V</a>
+                <a class="dropdown-item" onclick=ControlVoltage("220-240V")>220-240 V</a>
                 <!-- <div class="dropdown-divider"></div> -->
               </div>
+              <script type="text/javascript">
+              function ControlVoltage(thing){
+                document.getElementById("ControlVoltage").innerText = thing;
+              }
+              </script>
             </div>
             <!-- <input type="dropdown" name="" value="---"> -->
           </div>
@@ -229,9 +259,9 @@
             <br>
             <p>
               <form class="data-toggle" action="" method="post">
-                <% ["Yes", "No"].each do |val| %>
-                  <%= radio_button_tag :val, val %>
-                  <%= val %>
+                <% ["Yes", "No"].each do |plc1| %>
+                  <%= radio_button_tag :plc1, plc1 %>
+                  <%= plc1 %>
                 <% end %>
               </form>
             </p>
@@ -242,9 +272,9 @@
             <br>
             <p>
               <form class="" action="" method="post">
-                <% ["Yes", "No"].each do |val| %>
-                  <%= radio_button_tag :val, val %>
-                  <%= val %>
+                <% ["Yes", "No"].each do |plc2| %>
+                  <%= radio_button_tag :plc2, plc2 %>
+                  <%= plc2 %>
                 <% end %>
               </form>
             </p>
@@ -252,16 +282,16 @@
             <br>
             <p>
               <form class="" action="" method="post">
-                <% ["Yes", "No"].each do |val| %>
-                  <%= radio_button_tag :val, val %>
-                  <%= val %>
+                <% ["Yes", "No"].each do |plc3| %>
+                  <%= radio_button_tag :plc3, plc3 %>
+                  <%= plc3 %>
                 <% end %>
               </form>
             </p>
             <!--  TODO: Hide the following COLLAPSED2 SECTION until YES is selected from the above form choice-->
             <!--  COLLAPSED2 -->
             <div id="plcHidden2" data-toggle=0>
-              <input type="text" class="form-control" name="" value="" placeholder="Please enter the make/model of the PLC required.">
+              <input type="text" width="35" class="form-control" name="" value="" placeholder="Please enter the make/model of the PLC required.">
             </div>
             <script type="text/javascript">
               function toggleSomething(id){
@@ -277,9 +307,9 @@
             <br>
             <p>
               <form class="" action="" method="post">
-                <% ["Yes", "No"].each do |val| %>
-                  <%= radio_button_tag :val, val %>
-                  <%= val %>
+                <% ["Yes", "No"].each do |plc4| %>
+                  <%= radio_button_tag :plc4, plc4 %>
+                  <%= plc4 %>
                 <% end %>
               </form>
             </p>
@@ -290,9 +320,9 @@
               <br>
               <p>
                 <form class="" action="" method="post">
-                  <% ["Yes", "No"].each do |val| %>
-                    <%= radio_button_tag :val, val %>
-                    <%= val %>
+                  <% ["Yes", "No"].each do |hmi1| %>
+                    <%= radio_button_tag :hmi1, hmi1 %>
+                    <%= hmi1 %>
                   <% end %>
                 </form>
               </p>              <!--  Program in a function to show the following COLLAPSED section only when Yes is selected-->
@@ -301,9 +331,9 @@
               <br>
               <p>
                 <form class="" action="" method="post">
-                  <% ["Yes", "No"].each do |val| %>
-                    <%= radio_button_tag :val, val %>
-                    <%= val %>
+                  <% ["Yes", "No"].each do |hmi2| %>
+                    <%= radio_button_tag :hmi2, hmi2 %>
+                    <%= hmi2 %>
                   <% end %>
                 </form>
               </p>
@@ -311,9 +341,9 @@
               <br>
               <p>
                 <form class="" action="" method="post">
-                  <% ["Yes", "No"].each do |val| %>
-                    <%= radio_button_tag :val, val %>
-                    <%= val %>
+                  <% ["Yes", "No"].each do |hmi3| %>
+                    <%= radio_button_tag :hmi3, hmi3 %>
+                    <%= hmi3 %>
                   <% end %>
                 </form>
               </p>
@@ -326,9 +356,9 @@
               <br>
               <p>
                 <form class="" action="" method="post">
-                  <% ["Yes", "No"].each do |val| %>
-                    <%= radio_button_tag :val, val %>
-                    <%= val %>
+                  <% ["Yes", "No"].each do |hmi4| %>
+                    <%= radio_button_tag :hmi4, hmi4 %>
+                    <%= hmi4 %>
                   <% end %>
                 </form>
               </p>
@@ -341,9 +371,9 @@
             <br>
               <p>
                 <form class="" action="" method="post">
-                  <% ["Yes", "No"].each do |val| %>
-                    <%= radio_button_tag :val, val %>
-                    <%= val %>
+                  <% ["Yes", "No"].each do |buttons1| %>
+                    <%= radio_button_tag :buttons1, buttons1 %>
+                    <%= buttons1 %>
                   <% end %>
                 </form>
               </p>              <!--  Program in a function to show the following COLLAPSED section only when Yes is selected-->
@@ -352,9 +382,9 @@
               <br>
               <p>
                 <form class="" action="" method="post">
-                  <% ["Yes", "No"].each do |val| %>
-                    <%= radio_button_tag :val, val %>
-                    <%= val %>
+                  <% ["Yes", "No"].each do |buttons2| %>
+                    <%= radio_button_tag :buttons2, buttons2 %>
+                    <%= buttons2 %>
                   <% end %>
                 </form>
               </p>
@@ -362,9 +392,9 @@
               <br>
               <p>
                 <form class="" action="" method="post">
-                  <% ["Yes", "No"].each do |val| %>
-                    <%= radio_button_tag :val, val %>
-                    <%= val %>
+                  <% ["Yes", "No"].each do |buttons3| %>
+                    <%= radio_button_tag :buttons3, buttons3 %>
+                    <%= buttons3 %>
                   <% end %>
                 </form>
               </p>
