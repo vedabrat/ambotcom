@@ -74,20 +74,26 @@
             </p>
             <br>
             <div class="btn-group">
-              <button type="button" class="btn">---</button>
+              <button id="IndustryButton" type="button" class="btn">---</button>
               <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span class="sr-only">Toggle Dropdown</span>
               </button>
               <div class="dropdown-menu">
-                <a class="dropdown-item">Automotive</a>
-                <a class="dropdown-item">Energy</a>
-                <a class="dropdown-item">Food Beverage</a>
-                <a class="dropdown-item">Manufacturing</a>
-                <a class="dropdown-item">Packaging</a>
-                <a class="dropdown-item">Pharmaceutical</a>
-                <a class="dropdown-item">Other</a>
+                <a class="dropdown-item" onclick="IndustryButton("Automotive")">Automotive</a>
+                <a class="dropdown-item" onclick="IndustryButton("Energy")">Energy</a>
+                <a class="dropdown-item" onclick="IndustryButton("Food Beverage")">Food Beverage</a>
+                <a class="dropdown-item" onclick="IndustryButton("Manufacturing")">Manufacturing</a>
+                <a class="dropdown-item" onclick="IndustryButton("Packaging")">Packaging</a>
+                <a class="dropdown-item" onclick="IndustryButton("Pharmaceutical")">Pharmaceutical</a>
+                <a class="dropdown-item" onclick="IndustryButton("Other")">Other</a>
                 <!--  Program in a function to show the following textbox only when other is selected-->
                 <input type="text" class="form-control" name="" value="" placeholder="Please specify your industry.">
+                <script type="text/javascript">
+                  function IndustryButton(arg){
+                    console.log(arg)
+                    document.getElementById(arg).innerText = arg
+                  }
+                </script>
               </div>
             </div>
           </div>
@@ -222,7 +228,7 @@
               PLC Required?
             <br>
             <p>
-              <form class="" action="" method="post">
+              <form class="data-toggle" action="" method="post">
                 <% ["Yes", "No"].each do |val| %>
                   <%= radio_button_tag :val, val %>
                   <%= val %>
@@ -236,39 +242,31 @@
             <br>
             <p>
               <form class="" action="" method="post">
-                <label for="Yes">
-                  Yes
-                </label>
-                <input type="radio" name="" value="">
-                <label for="No">
-                  No
-                </label>
-                <input type="radio" name="" value="">
+                <% ["Yes", "No"].each do |val| %>
+                  <%= radio_button_tag :val, val %>
+                  <%= val %>
+                <% end %>
               </form>
             </p>
               Do you require a specific PLC?
             <br>
             <p>
               <form class="" action="" method="post">
-                <label for="Yes" onclick=toggleSomething(plcHidden2)>
-                  Yes
-                </label>
-                <input type="radio" name="" value="">
-                <label for="No">
-                  No
-                </label>
-                <input type="radio" name="" value="">
+                <% ["Yes", "No"].each do |val| %>
+                  <%= radio_button_tag :val, val %>
+                  <%= val %>
+                <% end %>
               </form>
             </p>
             <!--  TODO: Hide the following COLLAPSED2 SECTION until YES is selected from the above form choice-->
             <!--  COLLAPSED2 -->
-            <div id="plcHidden2" hidden="">
+            <div id="plcHidden2" data-toggle=0>
               <input type="text" class="form-control" name="" value="" placeholder="Please enter the make/model of the PLC required.">
             </div>
             <script type="text/javascript">
               function toggleSomething(id){
                 id = "#" + id.to_str()
-                ($(id).hidden == "true")?($(id).hidden = "False"):($(id).hidden = "true")
+                ($(id).collapse == "true")?($(id).hidden = "False"):($(id).hidden = "true")
                 // brute script below
                 // ($("#plcHidden2").hidden == "true")?($("#plcHidden2").hidden = "False"):($("#plcHidden2").hidden = "true")
               }
@@ -279,14 +277,10 @@
             <br>
             <p>
               <form class="" action="" method="post">
-                <label for="Yes">
-                  Yes
-                </label>
-                <input type="radio" name="" value="">
-                <label for="No">
-                  No
-                </label>
-                <input type="radio" name="" value="">
+                <% ["Yes", "No"].each do |val| %>
+                  <%= radio_button_tag :val, val %>
+                  <%= val %>
+                <% end %>
               </form>
             </p>
             </div>
@@ -296,14 +290,10 @@
               <br>
               <p>
                 <form class="" action="" method="post">
-                  <label for="Yes">
-                    Yes
-                  </label>
-                  <input type="radio" name="" value="">
-                  <label for="No">
-                    No
-                  </label>
-                  <input type="radio" name="" value="">
+                  <% ["Yes", "No"].each do |val| %>
+                    <%= radio_button_tag :val, val %>
+                    <%= val %>
+                  <% end %>
                 </form>
               </p>              <!--  Program in a function to show the following COLLAPSED section only when Yes is selected-->
               <!--  COLLAPSED  -->
@@ -311,28 +301,20 @@
               <br>
               <p>
                 <form class="" action="" method="post">
-                  <label for="Yes">
-                    Yes
-                  </label>
-                  <input type="radio" name="" value="">
-                  <label for="No">
-                    No
-                  </label>
-                  <input type="radio" name="" value="">
+                  <% ["Yes", "No"].each do |val| %>
+                    <%= radio_button_tag :val, val %>
+                    <%= val %>
+                  <% end %>
                 </form>
               </p>
                 Do you require a specific HMI?
               <br>
               <p>
                 <form class="" action="" method="post">
-                  <label for="Yes">
-                    Yes
-                  </label>
-                  <input type="radio" name="" value="">
-                  <label for="No">
-                    No
-                  </label>
-                  <input type="radio" name="" value="">
+                  <% ["Yes", "No"].each do |val| %>
+                    <%= radio_button_tag :val, val %>
+                    <%= val %>
+                  <% end %>
                 </form>
               </p>
               <!--  TODO: Hide the following COLLAPSED2 SECTION until YES is selected from the above form choice-->
@@ -344,14 +326,10 @@
               <br>
               <p>
                 <form class="" action="" method="post">
-                  <label for="Yes">
-                    Yes
-                  </label>
-                  <input type="radio" name="" value="">
-                  <label for="No">
-                    No
-                  </label>
-                  <input type="radio" name="" value="">
+                  <% ["Yes", "No"].each do |val| %>
+                    <%= radio_button_tag :val, val %>
+                    <%= val %>
+                  <% end %>
                 </form>
               </p>
               <!--  COLLAPSED END  -->
@@ -363,14 +341,10 @@
             <br>
               <p>
                 <form class="" action="" method="post">
-                  <label for="Yes">
-                    Yes
-                  </label>
-                  <input type="radio" name="" value="">
-                  <label for="No">
-                    No
-                  </label>
-                  <input type="radio" name="" value="">
+                  <% ["Yes", "No"].each do |val| %>
+                    <%= radio_button_tag :val, val %>
+                    <%= val %>
+                  <% end %>
                 </form>
               </p>              <!--  Program in a function to show the following COLLAPSED section only when Yes is selected-->
               <!--  COLLAPSED  -->
@@ -378,28 +352,20 @@
               <br>
               <p>
                 <form class="" action="" method="post">
-                  <label for="Yes">
-                    Yes
-                  </label>
-                  <input type="radio" name="" value="">
-                  <label for="No">
-                    No
-                  </label>
-                  <input type="radio" name="" value="">
+                  <% ["Yes", "No"].each do |val| %>
+                    <%= radio_button_tag :val, val %>
+                    <%= val %>
+                  <% end %>
                 </form>
               </p>
                 Do you require specific buttons?
               <br>
               <p>
                 <form class="" action="" method="post">
-                  <label for="Yes">
-                    Yes
-                  </label>
-                  <input type="radio" name="" value="">
-                  <label for="No">
-                    No
-                  </label>
-                  <input type="radio" name="" value="">
+                  <% ["Yes", "No"].each do |val| %>
+                    <%= radio_button_tag :val, val %>
+                    <%= val %>
+                  <% end %>
                 </form>
               </p>
               <!--  TODO: Hide the following COLLAPSED2 SECTION until YES is selected from the above form choice-->
@@ -422,9 +388,6 @@
         <hr width="100%">
         <div class="row">
           <div class="col">
-            <br>
-            <br>
-            <br>
             <br>
             Please provide any additional information required.
             <textarea name="message" class="form-control" rows="10" cols="30" placeholder="">
