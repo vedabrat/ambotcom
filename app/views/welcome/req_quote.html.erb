@@ -1,14 +1,20 @@
 <div class="container" id="header">
-  <div class="row" height="200%">
-    <div class="col-2">
-      Social Media Buttons
+  <div class="row" height="200%" style="background-color:lightblue">
+    <div class="col-2" >
+      <a href="https://www.linkedin.com/in/ambotAutomation" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+      <a href="https://twitter.com/ambotAutomation" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+      <a href="https://www.facebook.com/ambotAutomation" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+      <a href="https://www.instagram.com/103427626796321201124" class="btn-social btn-outline"><i class="fa fa-fw fa-instagram"></i></a>
+      <a href="https://www.youtube.com/103027526496322001124" class="btn-social btn-outline"><i class="fa fa-fw fa-youtube-play"></i></a>
     </div>
     <div class="col-6">
     </div>
     <div class="col-2 right">
+      <a href="https://www.youtube.com/103027526496322001124" class="btn-social btn-outline"><i class="fa fa-fw fa-time"></i></a>
       24/7 Support
     </div>
     <div class="col-2 right">
+      <a href="https://www.youtube.com/103027526496322001124" class="btn-social btn-outline"><i class="fa fa-fw fa-phone"></i></a>
       +1.416.892.7966
     </div>
   </div>
@@ -35,7 +41,7 @@
 </div>
 <br><br>
 <div class="container" id="body">
-  <div class="row">
+  <div class="row" style="background-color:lightblue">
     <h1>
       <em>
         Custom Control Panel Quote
@@ -258,16 +264,16 @@
               PLC Required?
             <br>
             <p>
-              <form class="data-toggle" action="" method="post">
+              <div class="data-toggle" action="" method="post">
                 <% ["Yes", "No"].each do |plc1| %>
                   <%= radio_button_tag :plc1, plc1 %>
                   <%= plc1 %>
                 <% end %>
-              </form>
+              </div>
             </p>
             <!--  Program in a function to show the following COLLAPSED section only when Yes is selected-->
             <!--  COLLAPSED  -->
-            <div class="" id="plcHidden1" >
+            <div class="" id="plcHidden1" class="collapse">
               Will you be supplying the PLC?
             <br>
             <p>
@@ -459,7 +465,7 @@
     </div>
   </div>
 </div>
-<div class="container" id="footer">
+<div class="container" id="footer" style="background-color:#333333; color:#ffffff">
   <div class="row">
     <div class="col-9">
       <div class="row">
@@ -477,5 +483,8 @@
     </div>
     <div class="col-3">My form begins here
     </div>
+  </div>
+  <div class="text-center" style="background-color:#000033">
+    Copyright AmbotAutomation
   </div>
 </div>
