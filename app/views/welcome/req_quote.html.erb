@@ -1,4 +1,4 @@
-<div class="container" id="header">
+<div class="container container-fluid" width="100%" id="header">
   <div class="row" height="200%" style="background-color:lightblue">
     <div class="col-2" >
       <a href="https://www.linkedin.com/in/ambotAutomation" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
@@ -10,7 +10,7 @@
     <div class="col-6">
     </div>
     <div class="col-2 right">
-      <a href="https://www.youtube.com/103027526496322001124" class="btn-social btn-outline"><i class="fa fa-fw fa-time"></i></a>
+      <a href="https://www.youtube.com/103027526496322001124" class="btn-social btn-outline"><i class="fa fa-fw fa-clock-o"></i></a>
       24/7 Support
     </div>
     <div class="col-2 right">
@@ -40,7 +40,7 @@
   </div>
 </div>
 <br><br>
-<div class="container" id="body">
+<div class="container container-fluid" width="100%"  id="body">
   <div class="row" style="background-color:lightblue">
     <h1>
       <em>
@@ -48,7 +48,7 @@
       </em>
     </h1>
   </div>
-  <div class="container">
+  <div class="container container-fluid" width="100%" >
     <div class="row">
       <div class="col-4">
         <%= image_tag("ord_req_1.png") %>
@@ -447,10 +447,10 @@
                 // This is the script for the datepicker's functionality.
               $(document).ready(function(){
                 var date_input=$('input[name="date"]'); //our date input has the name "date"
-                var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+                var container container-fluid=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
                 var options={
                   format: 'mm/dd/yyyy',
-                  container: container,
+                  container container-fluid: container container-fluid,
                   todayHighlight: true,
                   autoclose: true,
                 };
@@ -465,7 +465,7 @@
     </div>
   </div>
 </div>
-<div class="container" id="footer" style="background-color:#333333; color:#ffffff">
+<div class="container container-fluid" width="100%"  id="footer" style="background-color:#333333; color:#ffffff">
   <div class="row">
     <div class="col-9">
       <div class="row">
