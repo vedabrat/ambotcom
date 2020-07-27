@@ -278,22 +278,22 @@
                 Will you be supplying the PLC?
               <br>
               <p>
-                <form class="" action="" method="post">
+                <input id="plcRadio" class="radio_button_tag" >
                   <% ["Yes", "No"].each do |plc2| %>
                     <%= radio_button_tag :plc2, plc2 %>
                     <%= plc2 %>
                   <% end %>
-                </form>
+                </input>
               </p>
                 Do you require a specific PLC?
               <br>
               <p>
-                <form class="" action="" method="post">
+                <input class="radio_button_tag">
                   <% ["Yes", "No"].each do |plc3| %>
                     <%= radio_button_tag :plc3, plc3 %>
                     <%= plc3 %>
                   <% end %>
-                </form>
+                </input>
               </p>
               <!--  TODO: Hide the following COLLAPSED2 SECTION until YES is selected from the above form choice-->
               <!--  COLLAPSED2 -->
@@ -313,12 +313,12 @@
               Would you like us to include a quote for programming?
               <br>
               <p>
-                <form class="" action="" method="post">
+                <input class="radio_button_tag">
                   <% ["Yes", "No"].each do |plc4| %>
                     <%= radio_button_tag :plc4, plc4 %>
                     <%= plc4 %>
                   <% end %>
-                </form>
+                </input>
               </p>
               </div>
               <!--  COLLAPSED END  -->
@@ -326,33 +326,33 @@
                 HMI Required?
                 <br>
                 <p>
-                  <form class="" action="" method="post">
+                  <input class="radio_button_tag">
                     <% ["Yes", "No"].each do |hmi1| %>
                       <%= radio_button_tag :hmi1, hmi1 %>
                       <%= hmi1 %>
                     <% end %>
-                  </form>
+                  </input>
                 </p>              <!--  Program in a function to show the following COLLAPSED section only when Yes is selected-->
                 <!--  COLLAPSED  -->
                 Will you be supplying the HMI?
                 <br>
                 <p>
-                  <form class="" action="" method="post">
+                  <input class="radio_button_tag">
                     <% ["Yes", "No"].each do |hmi2| %>
                       <%= radio_button_tag :hmi2, hmi2 %>
                       <%= hmi2 %>
                     <% end %>
-                  </form>
+                  </input>
                 </p>
                   Do you require a specific HMI?
                 <br>
                 <p>
-                  <form class="" action="" method="post">
+                  <input class="radio_button_tag">
                     <% ["Yes", "No"].each do |hmi3| %>
                       <%= radio_button_tag :hmi3, hmi3 %>
                       <%= hmi3 %>
                     <% end %>
-                  </form>
+                  </input>
                 </p>
                 <!--  TODO: Hide the following COLLAPSED2 SECTION until YES is selected from the above form choice-->
                 <!--  COLLAPSED2 -->
@@ -362,12 +362,12 @@
                 Would you like us to include a quote for programming?
                 <br>
                 <p>
-                  <form class="" action="" method="post">
+                  <input class="radio_button_tag">
                     <% ["Yes", "No"].each do |hmi4| %>
                       <%= radio_button_tag :hmi4, hmi4 %>
                       <%= hmi4 %>
                     <% end %>
-                  </form>
+                  </input>
                 </p>
                 <!--  COLLAPSED END  -->
               <p>
@@ -377,33 +377,33 @@
                 Buttons Required?
               <br>
                 <p>
-                  <form class="" action="" method="post">
+                  <input class="radio_button_tag">
                     <% ["Yes", "No"].each do |buttons1| %>
                       <%= radio_button_tag :buttons1, buttons1 %>
                       <%= buttons1 %>
                     <% end %>
-                  </form>
+                  </input>
                 </p>              <!--  Program in a function to show the following COLLAPSED section only when Yes is selected-->
                 <!--  COLLAPSED  -->
                 Will you be supplying the buttons?
                 <br>
                 <p>
-                  <form class="" action="" method="post">
+                  <input class="radio_button_tag">
                     <% ["Yes", "No"].each do |buttons2| %>
                       <%= radio_button_tag :buttons2, buttons2 %>
                       <%= buttons2 %>
                     <% end %>
-                  </form>
+                  </input>
                 </p>
                   Do you require specific buttons?
                 <br>
                 <p>
-                  <form class="" action="" method="post">
+                  <input class="radio_button_tag">
                     <% ["Yes", "No"].each do |buttons3| %>
                       <%= radio_button_tag :buttons3, buttons3 %>
                       <%= buttons3 %>
                     <% end %>
-                  </form>
+                  </input>
                 </p>
                 <!--  TODO: Hide the following COLLAPSED2 SECTION until YES is selected from the above form choice-->
                 <!--  COLLAPSED2 -->
@@ -435,7 +435,7 @@
               Expected Completion Date
               </p>
               <br>
-              <form method="post">
+              <input >
                 <div class="form-group"> <!-- Date input -->
                   <label class="control-label" for="date">Date</label>
                   <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
@@ -443,7 +443,7 @@
                 <div class="form-group"> <!-- Submit button -->
                   <button class="btn btn-primary " name="submit" type="submit">Submit</button>
                 </div>
-             </form>
+             </input
              <script>
                   // This is the script for the datepicker's functionality.
                 $(document).ready(function(){
