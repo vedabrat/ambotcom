@@ -13,7 +13,7 @@
       <a href="https://www.youtube.com/103027526496322001124" class="btn-social btn-outline"><i class="fa fa-fw fa-clock-o"></i></a>
       24/7 Support
     </div>
-    <div class="col-2 right">
+    <div class="col-2.5 right">
       <a href="https://www.youtube.com/103027526496322001124" class="btn-social btn-outline"><i class="fa fa-fw fa-phone"></i></a>
       +1.416.892.7966
     </div>
@@ -40,430 +40,432 @@
   </div>
 </div>
 <br><br>
-<div class="container container-fluid" width="100%"  id="body">
-  <div class="row" style="background-color:lightblue">
-    <h1>
-      <em>
-        Custom Control Panel Quote
-      </em>
-    </h1>
-  </div>
-  <div class="container container-fluid" width="100%" >
-    <div class="row">
-      <div class="col-4">
-        <%= image_tag("ord_req_1.png") %>
-      </div>
-      <div class="col-8">
-        <div class="row">
-          <div class="col">
-            Basic Form
-            <br>
-            <input type="text" class="form-control" name="" value="" placeholder="First Name (required)">
-            <br>
-            <input type="text" class="form-control" name="" value="" placeholder="Email (required))">
-            <br>
-            <p>
-              Service Branch Location
-            </p>
-            <br>
-            <input type="dropdown" name="" value="Toronto, Ontario">
-          </div>
-          <div class="col">
-            Advanced Form
-            <br>
-            <input type="text" class="form-control" name="" value="" placeholder="Last Name (required)">
-            <br>
-            <input type="text" class="form-control" name="" value="" placeholder="Company">
-            <br>
-            <p>
-              Industry
-            </p>
-            <br>
-            <div class="btn-group">
-              <button id="IndustryButton" type="button" class="btn">---</button>
-              <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="sr-only">Toggle Dropdown</span>
-              </button>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" onclick=IndustryButton("Automotive")>Automotive</a>
-                <a class="dropdown-item" onclick=IndustryButton("Energy")>Energy</a>
-                <a class="dropdown-item" onclick=IndustryButton("FoodBeverage")>Food Beverage</a>
-                <a class="dropdown-item" onclick=IndustryButton("Manufacturing")>Manufacturing</a>
-                <a class="dropdown-item" onclick=IndustryButton("Packaging")>Packaging</a>
-                <a class="dropdown-item" onclick=IndustryButton("Pharmaceutical")>Pharmaceutical</a>
-                <a class="dropdown-item" onclick=IndustryButton("Other")>Other</a>
-                <!--  Program in a function to show the following textbox only when other is selected-->
-                <input type="text" class="form-control" name="" value="" placeholder="Please specify your industry.">
-              </div>
-              <script type="text/javascript">
-              function IndustryButton(thing){
-                document.getElementById("IndustryButton").innerText = thing;
-              }
-              </script>
-            </div>
-          </div>
+<div class="container container-fluid" width="100%"  id="body" >
+  <form  action="https://getsimpleform.com/messages?form_api_token=b3a753b8a8f9dd973108208981f54524" method="post">
+    <div class="row" style="background-color:lightblue">
+      <h1>
+        <em>
+          Custom Control Panel Quote
+        </em>
+      </h1>
+    </div>
+    <div class="container container-fluid" width="100%" style="font-family:'PT Sans'">
+      <div class="row">
+        <div class="col-4">
+          <%= image_tag("ord_req_1.png") %>
         </div>
-        <br>
-        <hr width="100%">
-        <div class="row">
-          <div class="col">
-            <p>
-            Panel Enclosure
-            <div class="btn-group">
-              <button type="button" id="PanelEnclosure" class="btn">---</button>
-              <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="sr-only">Toggle Dropdown</span>
-              </button>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" onclick=PanelEnclosure("StainlessSteel")>Stainless Steel</a>
-                <a class="dropdown-item" onclick=PanelEnclosure("FiberGlass")>Fiber Glass</a>
-                <a class="dropdown-item" onclick=PanelEnclosure("MildSteel")>Mild Steel</a>
-                <a class="dropdown-item" onclick=PanelEnclosure("Other")>Other</a>
-                <!--  Program in a function to show the following textbox only when other is selected-->
-                <input type="text" class="form-control" name="" value="" placeholder="Please specify the enclosure type.">
-              </div>
-              <script type="text/javascript">
-              function PanelEnclosure(thing){
-                document.getElementById("PanelEnclosure").innerText = thing;
-              }
-              </script>
+        <div class="col-8">
+          <div class="row">
+            <div class="col" >
+              Basic Form
+              <br>
+              <input type="text" class="form-control" name="" value="" placeholder="First Name (required)">
+              <br>
+              <input type="text" class="form-control" name="" value="" placeholder="Email (required))">
+              <br>
+              <p>
+                Service Branch Location
+              </p>
+              <br>
+              <input type="dropdown" name="" value="Toronto, Ontario">
             </div>
+            <div class="col">
+              Advanced Form
+              <br>
+              <input type="text" class="form-control" name="" value="" placeholder="Last Name (required)">
+              <br>
+              <input type="text" class="form-control" name="" value="" placeholder="Company">
+              <br>
+              <p>
+                Industry
+              </p>
+              <br>
+              <div class="btn-group">
+                <button id="IndustryButton" type="button" class="btn">---</button>
+                <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" onclick=IndustryButton("Automotive")>Automotive</a>
+                  <a class="dropdown-item" onclick=IndustryButton("Energy")>Energy</a>
+                  <a class="dropdown-item" onclick=IndustryButton("FoodBeverage")>Food Beverage</a>
+                  <a class="dropdown-item" onclick=IndustryButton("Manufacturing")>Manufacturing</a>
+                  <a class="dropdown-item" onclick=IndustryButton("Packaging")>Packaging</a>
+                  <a class="dropdown-item" onclick=IndustryButton("Pharmaceutical")>Pharmaceutical</a>
+                  <a class="dropdown-item" onclick=IndustryButton("Other")>Other</a>
+                  <!--  Program in a function to show the following textbox only when other is selected-->
+                  <input type="text" class="form-control" name="" value="" placeholder="Please specify your industry.">
+                </div>
+                <script type="text/javascript">
+                function IndustryButton(thing){
+                  document.getElementById("IndustryButton").innerText = thing;
+                }
+                </script>
+              </div>
+            </div>
+          </div>
+          <br>
+          <hr width="100%">
+          <div class="row">
+            <div class="col">
+              <p>
+              Panel Enclosure
+              <div class="btn-group">
+                <button type="button" id="PanelEnclosure" class="btn">---</button>
+                <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" onclick=PanelEnclosure("StainlessSteel")>Stainless Steel</a>
+                  <a class="dropdown-item" onclick=PanelEnclosure("FiberGlass")>Fiber Glass</a>
+                  <a class="dropdown-item" onclick=PanelEnclosure("MildSteel")>Mild Steel</a>
+                  <a class="dropdown-item" onclick=PanelEnclosure("Other")>Other</a>
+                  <!--  Program in a function to show the following textbox only when other is selected-->
+                  <input type="text" class="form-control" name="" value="" placeholder="Please specify the enclosure type.">
+                </div>
+                <script type="text/javascript">
+                function PanelEnclosure(thing){
+                  document.getElementById("PanelEnclosure").innerText = thing;
+                }
+                </script>
+              </div>
 
-            </p>
-            <br>
-            <p>
-            Required Certification
-            <div class="btn-group">
-              <button id="RequiredCertification" type="button" class="btn">---</button>
-              <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="sr-only">Toggle Dropdown</span>
-              </button>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" onclick=RequiredCertification("CSAorESA")>CSA or ESA</a>
-                <a class="dropdown-item" onclick=RequiredCertification("CSA")>CSA</a>
-                <a class="dropdown-item" onclick=RequiredCertification("ESA")>ESA</a>
-                <a class="dropdown-item" onclick=RequiredCertification("UL")>UL</a>
-                <a class="dropdown-item" onclick=RequiredCertification("CE")>CE</a>
-                <a class="dropdown-item" onclick=RequiredCertification("Other")>Other</a>
-                <!--  Program in a function to show the following textbox only when other is selected-->
-                <input type="text" class="form-control" name="" value="" placeholder="Please specify the required certification.">
-              </div>
-              <script type="text/javascript">
-              function RequiredCertification(thing){
-                document.getElementById("RequiredCertification").innerText = thing;
-              }
-              </script>
-            </div>
-            </p>
-            <br>
-            <p>
-              Incoming Voltage
-            <div class="btn-group">
-              <button id="IncomingVoltage" type="button" class="btn">---</button>
-              <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="sr-only">Toggle Dropdown</span>
-              </button>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" onclick=IncomingVoltage("24")>24</a>
-                <a class="dropdown-item" onclick=IncomingVoltage("24VDC")>24 VDC</a>
-                <a class="dropdown-item" onclick=IncomingVoltage("24V")>24 V</a>
-                <a class="dropdown-item" onclick=IncomingVoltage("110-120V")>110-120 V</a>
-                <a class="dropdown-item" onclick=IncomingVoltage("220-380V")>220-380 V</a>
-                <a class="dropdown-item" onclick=IncomingVoltage("360-380V")>360-380 V</a>
-                <a class="dropdown-item" onclick=IncomingVoltage("440-480V")>440-480 V</a>
-                <a class="dropdown-item" onclick=IncomingVoltage("550-600V")>550-600 V</a>
-              </div>
-              <script type="text/javascript">
-              function IncomingVoltage(thing){
-                document.getElementById("IncomingVoltage").innerText = thing;
-              }
-              </script>
-            </div>
-            </p>
-            <br>
-          </div>
-          <div class="col">
-            <p>
-              Panel Safety Category
-            <div class="btn-group">
-              <button id="PanelSafetyCategory" type="button" class="btn">---</button>
-              <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="sr-only">Toggle Dropdown</span>
-              </button>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" onclick=PanelSafetyCategory("CAT-I") >CAT I</a>
-                <a class="dropdown-item" onclick=PanelSafetyCategory("CAT-II") >CAT II</a>
-                <a class="dropdown-item" onclick=PanelSafetyCategory("CAT-III") >CAT III</a>
-                <a class="dropdown-item" onclick=PanelSafetyCategory("CAT-IV") >CAT IV</a>
-              </div>
-              <script type="text/javascript">
-              function PanelSafetyCategory(thing){
-                document.getElementById("PanelSafetyCategory").innerText = thing;
-              }
-              </script>
-            </div>
-            </p>
-            <br>
-            <p>
-              NEMA Rating
-            <div class="btn-group">
-              <button id="NemaRating" type="button" class="btn">---</button>
-              <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="sr-only">Toggle Dropdown</span>
-              </button>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" onclick=NemaRating("1")>1</a>
-                <a class="dropdown-item" onclick=NemaRating("2")>2</a>
-                <a class="dropdown-item" onclick=NemaRating("3")>3</a>
-                <a class="dropdown-item" onclick=NemaRating("3R")>3R</a>
-                <a class="dropdown-item" onclick=NemaRating("3S")>3S</a>
-                <a class="dropdown-item" onclick=NemaRating("4")>4</a>
-                <a class="dropdown-item" onclick=NemaRating("4X")>4X</a>
-                <a class="dropdown-item" onclick=NemaRating("5")>5</a>
-                <a class="dropdown-item" onclick=NemaRating("6")>6</a>
-                <a class="dropdown-item" onclick=NemaRating("6P")>6P</a>
-                <a class="dropdown-item" onclick=NemaRating("12")>12</a>
-                <a class="dropdown-item" onclick=NemaRating("12K")>12K</a>
-                <a class="dropdown-item" onclick=NemaRating("13")>13</a>
-              </div>
-              <script type="text/javascript">
-              function NemaRating(thing){
-                document.getElementById("NemaRating").innerText = thing;
-              }
-              </script>
-            </div>
-            </p>
-            <br>
-            <p>
-              Control Voltage
-            <div id="ControlVoltage" class="btn-group">
-              <button type="button" class="btn">---</button>
-              <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="sr-only">Toggle Dropdown</span>
-              </button>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" onclick=ControlVoltage("24VDC")>24 VDC</a>
-                <a class="dropdown-item" onclick=ControlVoltage("24V")>24 V</a>
-                <a class="dropdown-item" onclick=ControlVoltage("110-120V")>110-120 V</a>
-                <a class="dropdown-item" onclick=ControlVoltage("220-240V")>220-240 V</a>
-                <!-- <div class="dropdown-divider"></div> -->
-              </div>
-              <script type="text/javascript">
-              function ControlVoltage(thing){
-                document.getElementById("ControlVoltage").innerText = thing;
-              }
-              </script>
-            </div>
-            <!-- <input type="dropdown" name="" value="---"> -->
-          </div>
-        </div>
-        </p>
-        <br>
-        <div class="row">
-          <div class="col">
-              PLC Required?
-            <br>
-            <p>
-              <div class="data-toggle" action="" method="post">
-                <% ["Yes", "No"].each do |plc1| %>
-                  <%= radio_button_tag :plc1, plc1 %>
-                  <%= plc1 %>
-                <% end %>
-              </div>
-            </p>
-            <!--  Program in a function to show the following COLLAPSED section only when Yes is selected-->
-            <!--  COLLAPSED  -->
-            <div class="" id="plcHidden1" class="collapse">
-              Will you be supplying the PLC?
-            <br>
-            <p>
-              <form class="" action="" method="post">
-                <% ["Yes", "No"].each do |plc2| %>
-                  <%= radio_button_tag :plc2, plc2 %>
-                  <%= plc2 %>
-                <% end %>
-              </form>
-            </p>
-              Do you require a specific PLC?
-            <br>
-            <p>
-              <form class="" action="" method="post">
-                <% ["Yes", "No"].each do |plc3| %>
-                  <%= radio_button_tag :plc3, plc3 %>
-                  <%= plc3 %>
-                <% end %>
-              </form>
-            </p>
-            <!--  TODO: Hide the following COLLAPSED2 SECTION until YES is selected from the above form choice-->
-            <!--  COLLAPSED2 -->
-            <div id="plcHidden2" data-toggle=0>
-              <input type="text" width="35" class="form-control" name="" value="" placeholder="Please enter the make/model of the PLC required.">
-            </div>
-            <script type="text/javascript">
-              function toggleSomething(id){
-                id = "#" + id.to_str()
-                ($(id).collapse == "true")?($(id).hidden = "False"):($(id).hidden = "true")
-                // brute script below
-                // ($("#plcHidden2").hidden == "true")?($("#plcHidden2").hidden = "False"):($("#plcHidden2").hidden = "true")
-              }
-            </script>
-            <!--  COLLAPSED2 END  -->
-            <br>
-            Would you like us to include a quote for programming?
-            <br>
-            <p>
-              <form class="" action="" method="post">
-                <% ["Yes", "No"].each do |plc4| %>
-                  <%= radio_button_tag :plc4, plc4 %>
-                  <%= plc4 %>
-                <% end %>
-              </form>
-            </p>
-            </div>
-            <!--  COLLAPSED END  -->
-            <br>
-              HMI Required?
+              </p>
               <br>
               <p>
-                <form class="" action="" method="post">
-                  <% ["Yes", "No"].each do |hmi1| %>
-                    <%= radio_button_tag :hmi1, hmi1 %>
-                    <%= hmi1 %>
+              Required Certification
+              <div class="btn-group">
+                <button id="RequiredCertification" type="button" class="btn">---</button>
+                <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" onclick=RequiredCertification("CSAorESA")>CSA or ESA</a>
+                  <a class="dropdown-item" onclick=RequiredCertification("CSA")>CSA</a>
+                  <a class="dropdown-item" onclick=RequiredCertification("ESA")>ESA</a>
+                  <a class="dropdown-item" onclick=RequiredCertification("UL")>UL</a>
+                  <a class="dropdown-item" onclick=RequiredCertification("CE")>CE</a>
+                  <a class="dropdown-item" onclick=RequiredCertification("Other")>Other</a>
+                  <!--  Program in a function to show the following textbox only when other is selected-->
+                  <input type="text" class="form-control" name="" value="" placeholder="Please specify the required certification.">
+                </div>
+                <script type="text/javascript">
+                function RequiredCertification(thing){
+                  document.getElementById("RequiredCertification").innerText = thing;
+                }
+                </script>
+              </div>
+              </p>
+              <br>
+              <p>
+                Incoming Voltage
+              <div class="btn-group">
+                <button id="IncomingVoltage" type="button" class="btn">---</button>
+                <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" onclick=IncomingVoltage("24")>24</a>
+                  <a class="dropdown-item" onclick=IncomingVoltage("24VDC")>24 VDC</a>
+                  <a class="dropdown-item" onclick=IncomingVoltage("24V")>24 V</a>
+                  <a class="dropdown-item" onclick=IncomingVoltage("110-120V")>110-120 V</a>
+                  <a class="dropdown-item" onclick=IncomingVoltage("220-380V")>220-380 V</a>
+                  <a class="dropdown-item" onclick=IncomingVoltage("360-380V")>360-380 V</a>
+                  <a class="dropdown-item" onclick=IncomingVoltage("440-480V")>440-480 V</a>
+                  <a class="dropdown-item" onclick=IncomingVoltage("550-600V")>550-600 V</a>
+                </div>
+                <script type="text/javascript">
+                function IncomingVoltage(thing){
+                  document.getElementById("IncomingVoltage").innerText = thing;
+                }
+                </script>
+              </div>
+              </p>
+              <br>
+            </div>
+            <div class="col">
+              <p>
+                Panel Safety Category
+              <div class="btn-group">
+                <button id="PanelSafetyCategory" type="button" class="btn">---</button>
+                <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" onclick=PanelSafetyCategory("CAT-I") >CAT I</a>
+                  <a class="dropdown-item" onclick=PanelSafetyCategory("CAT-II") >CAT II</a>
+                  <a class="dropdown-item" onclick=PanelSafetyCategory("CAT-III") >CAT III</a>
+                  <a class="dropdown-item" onclick=PanelSafetyCategory("CAT-IV") >CAT IV</a>
+                </div>
+                <script type="text/javascript">
+                function PanelSafetyCategory(thing){
+                  document.getElementById("PanelSafetyCategory").innerText = thing;
+                }
+                </script>
+              </div>
+              </p>
+              <br>
+              <p>
+                NEMA Rating
+              <div class="btn-group">
+                <button id="NemaRating" type="button" class="btn">---</button>
+                <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" onclick=NemaRating("1")>1</a>
+                  <a class="dropdown-item" onclick=NemaRating("2")>2</a>
+                  <a class="dropdown-item" onclick=NemaRating("3")>3</a>
+                  <a class="dropdown-item" onclick=NemaRating("3R")>3R</a>
+                  <a class="dropdown-item" onclick=NemaRating("3S")>3S</a>
+                  <a class="dropdown-item" onclick=NemaRating("4")>4</a>
+                  <a class="dropdown-item" onclick=NemaRating("4X")>4X</a>
+                  <a class="dropdown-item" onclick=NemaRating("5")>5</a>
+                  <a class="dropdown-item" onclick=NemaRating("6")>6</a>
+                  <a class="dropdown-item" onclick=NemaRating("6P")>6P</a>
+                  <a class="dropdown-item" onclick=NemaRating("12")>12</a>
+                  <a class="dropdown-item" onclick=NemaRating("12K")>12K</a>
+                  <a class="dropdown-item" onclick=NemaRating("13")>13</a>
+                </div>
+                <script type="text/javascript">
+                function NemaRating(thing){
+                  document.getElementById("NemaRating").innerText = thing;
+                }
+                </script>
+              </div>
+              </p>
+              <br>
+              <p>
+                Control Voltage
+              <div id="ControlVoltage" class="btn-group">
+                <button type="button" class="btn">---</button>
+                <button type="button" class="btn dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" onclick=ControlVoltage("24VDC")>24 VDC</a>
+                  <a class="dropdown-item" onclick=ControlVoltage("24V")>24 V</a>
+                  <a class="dropdown-item" onclick=ControlVoltage("110-120V")>110-120 V</a>
+                  <a class="dropdown-item" onclick=ControlVoltage("220-240V")>220-240 V</a>
+                  <!-- <div class="dropdown-divider"></div> -->
+                </div>
+                <script type="text/javascript">
+                function ControlVoltage(thing){
+                  document.getElementById("ControlVoltage").innerText = thing;
+                }
+                </script>
+              </div>
+              <!-- <input type="dropdown" name="" value="---"> -->
+            </div>
+          </div>
+          </p>
+          <br>
+          <div class="row">
+            <div class="col">
+                PLC Required?
+              <br>
+              <p>
+                <div class="data-toggle" action="" method="post">
+                  <% ["Yes", "No"].each do |plc1| %>
+                    <%= radio_button_tag :plc1, plc1 %>
+                    <%= plc1 %>
                   <% end %>
-                </form>
-              </p>              <!--  Program in a function to show the following COLLAPSED section only when Yes is selected-->
+                </div>
+              </p>
+              <!--  Program in a function to show the following COLLAPSED section only when Yes is selected-->
               <!--  COLLAPSED  -->
-              Will you be supplying the HMI?
+              <div class="" id="plcHidden1" class="collapse">
+                Will you be supplying the PLC?
               <br>
               <p>
                 <form class="" action="" method="post">
-                  <% ["Yes", "No"].each do |hmi2| %>
-                    <%= radio_button_tag :hmi2, hmi2 %>
-                    <%= hmi2 %>
+                  <% ["Yes", "No"].each do |plc2| %>
+                    <%= radio_button_tag :plc2, plc2 %>
+                    <%= plc2 %>
                   <% end %>
                 </form>
               </p>
-                Do you require a specific HMI?
+                Do you require a specific PLC?
               <br>
               <p>
                 <form class="" action="" method="post">
-                  <% ["Yes", "No"].each do |hmi3| %>
-                    <%= radio_button_tag :hmi3, hmi3 %>
-                    <%= hmi3 %>
+                  <% ["Yes", "No"].each do |plc3| %>
+                    <%= radio_button_tag :plc3, plc3 %>
+                    <%= plc3 %>
                   <% end %>
                 </form>
               </p>
               <!--  TODO: Hide the following COLLAPSED2 SECTION until YES is selected from the above form choice-->
               <!--  COLLAPSED2 -->
-              <input type="text" class="form-control" name="" value="" placeholder="Please enter the make/model of HMI required.">
+              <div id="plcHidden2" data-toggle=0>
+                <input type="text" width="35" class="form-control" name="" value="" placeholder="Please enter the make/model of the PLC required.">
+              </div>
+              <script type="text/javascript">
+                function toggleSomething(id){
+                  id = "#" + id.to_str()
+                  ($(id).collapse == "true")?($(id).hidden = "False"):($(id).hidden = "true")
+                  // brute script below
+                  // ($("#plcHidden2").hidden == "true")?($("#plcHidden2").hidden = "False"):($("#plcHidden2").hidden = "true")
+                }
+              </script>
               <!--  COLLAPSED2 END  -->
               <br>
               Would you like us to include a quote for programming?
               <br>
               <p>
                 <form class="" action="" method="post">
-                  <% ["Yes", "No"].each do |hmi4| %>
-                    <%= radio_button_tag :hmi4, hmi4 %>
-                    <%= hmi4 %>
+                  <% ["Yes", "No"].each do |plc4| %>
+                    <%= radio_button_tag :plc4, plc4 %>
+                    <%= plc4 %>
                   <% end %>
                 </form>
               </p>
-              <!--  COLLAPSED END  -->
-            <p>
-            </p>
-            <br>
-            <!--  Something's misaligned in the html-->
-              Buttons Required?
-            <br>
-              <p>
-                <form class="" action="" method="post">
-                  <% ["Yes", "No"].each do |buttons1| %>
-                    <%= radio_button_tag :buttons1, buttons1 %>
-                    <%= buttons1 %>
-                  <% end %>
-                </form>
-              </p>              <!--  Program in a function to show the following COLLAPSED section only when Yes is selected-->
-              <!--  COLLAPSED  -->
-              Will you be supplying the buttons?
-              <br>
-              <p>
-                <form class="" action="" method="post">
-                  <% ["Yes", "No"].each do |buttons2| %>
-                    <%= radio_button_tag :buttons2, buttons2 %>
-                    <%= buttons2 %>
-                  <% end %>
-                </form>
-              </p>
-                Do you require specific buttons?
-              <br>
-              <p>
-                <form class="" action="" method="post">
-                  <% ["Yes", "No"].each do |buttons3| %>
-                    <%= radio_button_tag :buttons3, buttons3 %>
-                    <%= buttons3 %>
-                  <% end %>
-                </form>
-              </p>
-              <!--  TODO: Hide the following COLLAPSED2 SECTION until YES is selected from the above form choice-->
-              <!--  COLLAPSED2 -->
-              <input type="text" class="form-control" name="" value="" placeholder="Please enter the make/model of any buttons required.">
-              <!--  COLLAPSED2 END  -->
-              <!--  COLLAPSED END  -->
-            <br>
-          </div>
-          <div class="col">
-            Motor Nameplate Info
-            <br>
-            <input class="form-control" type="text" name="" value="" placeholder="Please specify the AC motor info.">
-            <br>
-            <input class="form-control" type="text" name="" value="" placeholder="Please specify the DC motor info.">
-            <br>
-            <input class="form-control" type="text" name="" value="" placeholder="Please specify the other motor info.">
-          </div>
-        </div>
-        <hr width="100%">
-        <div class="row">
-          <div class="col">
-            <br>
-            Please provide any additional information required.
-            <textarea name="message" class="form-control" rows="10" cols="30" placeholder="">
-            </textarea>
-          </div>
-          <div class="col">
-            <p>
-            Expected Completion Date
-            </p>
-            <br>
-            <form method="post">
-              <div class="form-group"> <!-- Date input -->
-                <label class="control-label" for="date">Date</label>
-                <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
               </div>
-              <div class="form-group"> <!-- Submit button -->
-                <button class="btn btn-primary " name="submit" type="submit">Submit</button>
-              </div>
-           </form>
-           <script>
-                // This is the script for the datepicker's functionality.
-              $(document).ready(function(){
-                var date_input=$('input[name="date"]'); //our date input has the name "date"
-                var container container-fluid=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
-                var options={
-                  format: 'mm/dd/yyyy',
-                  container container-fluid: container container-fluid,
-                  todayHighlight: true,
-                  autoclose: true,
-                };
-                date_input.datepicker(options);
-              })
-          </script>
-           <br>
-           A Captcha Goes here
+              <!--  COLLAPSED END  -->
+              <br>
+                HMI Required?
+                <br>
+                <p>
+                  <form class="" action="" method="post">
+                    <% ["Yes", "No"].each do |hmi1| %>
+                      <%= radio_button_tag :hmi1, hmi1 %>
+                      <%= hmi1 %>
+                    <% end %>
+                  </form>
+                </p>              <!--  Program in a function to show the following COLLAPSED section only when Yes is selected-->
+                <!--  COLLAPSED  -->
+                Will you be supplying the HMI?
+                <br>
+                <p>
+                  <form class="" action="" method="post">
+                    <% ["Yes", "No"].each do |hmi2| %>
+                      <%= radio_button_tag :hmi2, hmi2 %>
+                      <%= hmi2 %>
+                    <% end %>
+                  </form>
+                </p>
+                  Do you require a specific HMI?
+                <br>
+                <p>
+                  <form class="" action="" method="post">
+                    <% ["Yes", "No"].each do |hmi3| %>
+                      <%= radio_button_tag :hmi3, hmi3 %>
+                      <%= hmi3 %>
+                    <% end %>
+                  </form>
+                </p>
+                <!--  TODO: Hide the following COLLAPSED2 SECTION until YES is selected from the above form choice-->
+                <!--  COLLAPSED2 -->
+                <input type="text" class="form-control" name="" value="" placeholder="Please enter the make/model of HMI required.">
+                <!--  COLLAPSED2 END  -->
+                <br>
+                Would you like us to include a quote for programming?
+                <br>
+                <p>
+                  <form class="" action="" method="post">
+                    <% ["Yes", "No"].each do |hmi4| %>
+                      <%= radio_button_tag :hmi4, hmi4 %>
+                      <%= hmi4 %>
+                    <% end %>
+                  </form>
+                </p>
+                <!--  COLLAPSED END  -->
+              <p>
+              </p>
+              <br>
+              <!--  Something's misaligned in the html-->
+                Buttons Required?
+              <br>
+                <p>
+                  <form class="" action="" method="post">
+                    <% ["Yes", "No"].each do |buttons1| %>
+                      <%= radio_button_tag :buttons1, buttons1 %>
+                      <%= buttons1 %>
+                    <% end %>
+                  </form>
+                </p>              <!--  Program in a function to show the following COLLAPSED section only when Yes is selected-->
+                <!--  COLLAPSED  -->
+                Will you be supplying the buttons?
+                <br>
+                <p>
+                  <form class="" action="" method="post">
+                    <% ["Yes", "No"].each do |buttons2| %>
+                      <%= radio_button_tag :buttons2, buttons2 %>
+                      <%= buttons2 %>
+                    <% end %>
+                  </form>
+                </p>
+                  Do you require specific buttons?
+                <br>
+                <p>
+                  <form class="" action="" method="post">
+                    <% ["Yes", "No"].each do |buttons3| %>
+                      <%= radio_button_tag :buttons3, buttons3 %>
+                      <%= buttons3 %>
+                    <% end %>
+                  </form>
+                </p>
+                <!--  TODO: Hide the following COLLAPSED2 SECTION until YES is selected from the above form choice-->
+                <!--  COLLAPSED2 -->
+                <input type="text" class="form-control" name="" value="" placeholder="Please enter the make/model of any buttons required.">
+                <!--  COLLAPSED2 END  -->
+                <!--  COLLAPSED END  -->
+              <br>
+            </div>
+            <div class="col">
+              Motor Nameplate Info
+              <br>
+              <input class="form-control" type="text" name="" value="" placeholder="Please specify the AC motor info.">
+              <br>
+              <input class="form-control" type="text" name="" value="" placeholder="Please specify the DC motor info.">
+              <br>
+              <input class="form-control" type="text" name="" value="" placeholder="Please specify the other motor info.">
+            </div>
+          </div>
+          <hr width="100%">
+          <div class="row">
+            <div class="col">
+              <br>
+              Please provide any additional information required.
+              <textarea name="message" class="form-control" rows="10" cols="30" placeholder="">
+              </textarea>
+            </div>
+            <div class="col">
+              <p>
+              Expected Completion Date
+              </p>
+              <br>
+              <form method="post">
+                <div class="form-group"> <!-- Date input -->
+                  <label class="control-label" for="date">Date</label>
+                  <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
+                </div>
+                <div class="form-group"> <!-- Submit button -->
+                  <button class="btn btn-primary " name="submit" type="submit">Submit</button>
+                </div>
+             </form>
+             <script>
+                  // This is the script for the datepicker's functionality.
+                $(document).ready(function(){
+                  var date_input=$('input[name="date"]'); //our date input has the name "date"
+                  var container container-fluid=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+                  var options={
+                    format: 'mm/dd/yyyy',
+                    container container-fluid: container container-fluid,
+                    todayHighlight: true,
+                    autoclose: true,
+                  };
+                  date_input.datepicker(options);
+                })
+            </script>
+             <br>
+             A Captcha Goes here
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </form>
 </div>
 <div class="container container-fluid" width="100%"  id="footer" style="background-color:#333333; color:#ffffff">
   <div class="row">
