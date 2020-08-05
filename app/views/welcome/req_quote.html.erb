@@ -1,6 +1,7 @@
 <div class="container container-fluid" width="100%" id="header">
   <div class="row" height="200%" style="background-color:lightblue">
     <div class="col-2" >
+      <br>
       <a href="https://www.linkedin.com/in/ambotAutomation" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
       <a href="https://twitter.com/ambotAutomation" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
       <a href="https://www.facebook.com/ambotAutomation" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
@@ -8,18 +9,23 @@
       <a href="https://www.youtube.com/103027526496322001124" class="btn-social btn-outline"><i class="fa fa-fw fa-youtube-play"></i></a>
     </div>
     <div class="col-6">
+      <br>
     </div>
     <div class="col-2 right">
+      <br>
       <a href="https://www.youtube.com/103027526496322001124" class="btn-social btn-outline"><i class="fa fa-fw fa-clock-o"></i></a>
       24/7 Support
+      <br>
+      <br>
     </div>
     <div class="col-2.5 right">
+      <br>
       <a href="https://www.youtube.com/103027526496322001124" class="btn-social btn-outline"><i class="fa fa-fw fa-phone"></i></a>
       +1.416.892.7966
     </div>
   </div>
-  <br><br><br>
-  <div class="row" height="400%">
+  <br><br>
+  <div class="row" height="400%" style="font-family: 'sans-serif;'">
     <div class="col-1">
       AMBOT AUTOMATION
     </div>
@@ -39,16 +45,20 @@
     </div>
   </div>
 </div>
-<br><br>
+<br>
 <div class="container container-fluid" width="100%"  id="body" >
   <form  action="https://getsimpleform.com/messages?form_api_token=b3a753b8a8f9dd973108208981f54524" method="post">
-    <div class="row" style="background-color:lightblue">
-      <h1>
+    <div class="row" style="background-color:lightblue; font-family: "Lucida Console", Courier, monospace; ">
+      <h3>
+        <br>
         <em>
           Custom Control Panel Quote
         </em>
-      </h1>
+      </h3>
+      <br>
     </div>
+    <br>
+    <br>
     <div class="container container-fluid" width="100%" style="font-family:'PT Sans'">
       <div class="row">
         <div class="col-4">
@@ -278,22 +288,18 @@
                 Will you be supplying the PLC?
               <br>
               <p>
-                <input id="plcRadio" class="radio_button_tag" >
-                  <% ["Yes", "No"].each do |plc2| %>
-                    <%= radio_button_tag :plc2, plc2 %>
-                    <%= plc2 %>
-                  <% end %>
-                </input>
+                <% ["Yes", "No"].each do |plc2| %>
+                  <%= radio_button_tag :plc2, plc2 %>
+                  <%= plc2 %>
+                <% end %>
               </p>
                 Do you require a specific PLC?
               <br>
               <p>
-                <input class="radio_button_tag">
-                  <% ["Yes", "No"].each do |plc3| %>
-                    <%= radio_button_tag :plc3, plc3 %>
-                    <%= plc3 %>
-                  <% end %>
-                </input>
+                <% ["Yes", "No"].each do |plc3| %>
+                  <%= radio_button_tag :plc3, plc3 %>
+                  <%= plc3 %>
+                <% end %>
               </p>
               <!--  TODO: Hide the following COLLAPSED2 SECTION until YES is selected from the above form choice-->
               <!--  COLLAPSED2 -->
@@ -313,12 +319,10 @@
               Would you like us to include a quote for programming?
               <br>
               <p>
-                <input class="radio_button_tag">
-                  <% ["Yes", "No"].each do |plc4| %>
-                    <%= radio_button_tag :plc4, plc4 %>
-                    <%= plc4 %>
-                  <% end %>
-                </input>
+                <% ["Yes", "No"].each do |plc4| %>
+                  <%= radio_button_tag :plc4, plc4 %>
+                  <%= plc4 %>
+                <% end %>
               </p>
               </div>
               <!--  COLLAPSED END  -->
@@ -326,33 +330,27 @@
                 HMI Required?
                 <br>
                 <p>
-                  <input class="radio_button_tag">
-                    <% ["Yes", "No"].each do |hmi1| %>
-                      <%= radio_button_tag :hmi1, hmi1 %>
-                      <%= hmi1 %>
-                    <% end %>
-                  </input>
+                  <% ["Yes", "No"].each do |hmi1| %>
+                    <%= radio_button_tag :hmi1, hmi1 %>
+                    <%= hmi1 %>
+                  <% end %>
                 </p>              <!--  Program in a function to show the following COLLAPSED section only when Yes is selected-->
                 <!--  COLLAPSED  -->
                 Will you be supplying the HMI?
                 <br>
                 <p>
-                  <input class="radio_button_tag">
-                    <% ["Yes", "No"].each do |hmi2| %>
-                      <%= radio_button_tag :hmi2, hmi2 %>
-                      <%= hmi2 %>
-                    <% end %>
-                  </input>
+                  <% ["Yes", "No"].each do |hmi2| %>
+                    <%= radio_button_tag :hmi2, hmi2 %>
+                    <%= hmi2 %>
+                  <% end %>
                 </p>
                   Do you require a specific HMI?
                 <br>
                 <p>
-                  <input class="radio_button_tag">
-                    <% ["Yes", "No"].each do |hmi3| %>
-                      <%= radio_button_tag :hmi3, hmi3 %>
-                      <%= hmi3 %>
-                    <% end %>
-                  </input>
+                  <% ["Yes", "No"].each do |hmi3| %>
+                    <%= radio_button_tag :hmi3, hmi3 %>
+                    <%= hmi3 %>
+                  <% end %>
                 </p>
                 <!--  TODO: Hide the following COLLAPSED2 SECTION until YES is selected from the above form choice-->
                 <!--  COLLAPSED2 -->
@@ -362,12 +360,10 @@
                 Would you like us to include a quote for programming?
                 <br>
                 <p>
-                  <input class="radio_button_tag">
-                    <% ["Yes", "No"].each do |hmi4| %>
-                      <%= radio_button_tag :hmi4, hmi4 %>
-                      <%= hmi4 %>
-                    <% end %>
-                  </input>
+                  <% ["Yes", "No"].each do |hmi4| %>
+                    <%= radio_button_tag :hmi4, hmi4 %>
+                    <%= hmi4 %>
+                  <% end %>
                 </p>
                 <!--  COLLAPSED END  -->
               <p>
@@ -377,33 +373,27 @@
                 Buttons Required?
               <br>
                 <p>
-                  <input class="radio_button_tag">
-                    <% ["Yes", "No"].each do |buttons1| %>
-                      <%= radio_button_tag :buttons1, buttons1 %>
-                      <%= buttons1 %>
-                    <% end %>
-                  </input>
+                  <% ["Yes", "No"].each do |buttons1| %>
+                    <%= radio_button_tag :buttons1, buttons1 %>
+                    <%= buttons1 %>
+                  <% end %>
                 </p>              <!--  Program in a function to show the following COLLAPSED section only when Yes is selected-->
                 <!--  COLLAPSED  -->
                 Will you be supplying the buttons?
                 <br>
                 <p>
-                  <input class="radio_button_tag">
-                    <% ["Yes", "No"].each do |buttons2| %>
-                      <%= radio_button_tag :buttons2, buttons2 %>
-                      <%= buttons2 %>
-                    <% end %>
-                  </input>
+                  <% ["Yes", "No"].each do |buttons2| %>
+                    <%= radio_button_tag :buttons2, buttons2 %>
+                    <%= buttons2 %>
+                  <% end %>
                 </p>
                   Do you require specific buttons?
                 <br>
                 <p>
-                  <input class="radio_button_tag">
-                    <% ["Yes", "No"].each do |buttons3| %>
-                      <%= radio_button_tag :buttons3, buttons3 %>
-                      <%= buttons3 %>
-                    <% end %>
-                  </input>
+                  <% ["Yes", "No"].each do |buttons3| %>
+                    <%= radio_button_tag :buttons3, buttons3 %>
+                    <%= buttons3 %>
+                  <% end %>
                 </p>
                 <!--  TODO: Hide the following COLLAPSED2 SECTION until YES is selected from the above form choice-->
                 <!--  COLLAPSED2 -->
